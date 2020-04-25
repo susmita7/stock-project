@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: block;
+}
+
+/***********************************************************************container-1***********************************************************/
+
+.container-1 {
+    height: 100vh;
+    width: 100%;
+}
+
+
+/*************************************************** containers under container-1 for 3-divs ***************************************************/
+
+.upper {
+    width: 100%;
+    height: 480px;
+    /* background-image: linear-gradient(-120deg, rgb(26, 35, 126), rgb(100, 181, 246)); */
+
+}
+
+.upper svg {
+    width: 100%;
+    height: 100%;
+}
+
+/***********************************************************************container-2***********************************************************/
+
+.container-2 {
+    position: absolute;
+    top: 0%;
+    background: transparent;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.stockpile-logo {
+    position: absolute;
+    top: 40px;
+
+}
+
+.stockpile-logo h1 {
+    width: 100%;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 300;
+    padding: 26px;
+}
+
+.stockpile-logo h3 {
+    width: 100%;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+/*************************************************** containers under container-2 for 3-divs ***************************************************/
+
+
+.middle {
+    background: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 185px
+}
+
+/*************************************************** div-1 and 2 and 3 with inner details and button *****************************************/
+
+
+
+
+
+
+.header {
+    width: 265px;
+    height: 190px;
+}
+
+#pic {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 265px;
+    height: 190px;
+    opacity: 0.6;
+
+}
+
+
+
+.button {
+    background: whitesmoke;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-left: 220px;
+    box-shadow: 0 0 16px rgba(77, 71, 71, 0.34);
+
+
+}
+
+
+.button:hover {
+    color: white;
+    background: rgb(2, 136, 209);
+    box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+
+}
+
+
+#user-logo>i {
+
+    margin-left: 10px;
+    font-size: 25px;
+    line-height: 42.5px;
+    transition: 0.6s ease;
+}
+
+#user-logo:hover>i {
+    transform: scale(1.0);
+    color: aliceblue;
+}
+
+
+
+.fa-user-plus {
+    color: rgb(2, 136, 209);
+}
+
+
+
+/************************************************************details under container-2***********************************************************/
+
+
+.detail {
+    /* background: whitesmoke; */
+    margin-top: 22px;
+    margin-left: 13px;
+    width: 90%;
+    height: 75px;
+}
+
+.heading {
+    color: rgb(2, 136, 209);
+    font-weight: bold;
+    font-size: 19px;
+    margin-left: 6px;
+    
+}
+
+#para {
+    font-weight: 100;
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+
+/***********************************************************************div-2***********************************************************/
+
+.div-2 {
+
+    border-radius: 10px;
+    background: white;
+    width: 265px;
+    height: 325px;
+    margin: 0px 80px;
+    box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+}
+
+/***********************************************************************div-3***********************************************************/
+
+.div-3 {
+    border-radius: 10px;
+    background: white;
+    width: 265px;
+    height: 325px;
+    margin: 0px 80px;
+    box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+}
+
+/*********************************************************************** back buuton ***************************************************/
+
+
+.down {
+    position: absolute;
+    bottom: 0%;
+    left: 1%;
+}
+
+.back_btn {
+
+    padding: 0;
+    text-align: center;
+}
+
+
+.back {
+
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50px;
+    overflow: hidden;
+    background: rgb(2, 136, 209);
+    height: 42px;
+
+}
+
+
+.back a {
+    display: block;
+    min-width: 38px;
+    max-width: 2em;
+    /* height: 1.8em; */
+    white-space: nowrap;
+    line-height: 44px;
+    transition: .8s;
+    text-decoration: none;
+    font-size: 21px;
+    color: #fff;
+
+}
+
+.back a i {
+    text-align: center;
+    margin-left: 11px;
+    margin-right: 9px;
+    padding-right: 5px;
+}
+
+.back:hover a {
+    padding-right: 20px;
+    max-width: 200px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/***********************************************************************container-3 used for overlay form***********************************************************/
+
+.container-3 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 5;
+    display: none;
+    opacity: 0;
+
+}
+
+
+#cross {
+    z-index: 6;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+}
+
+#cross i {
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+
+
+/***********************************************login form base and heading**********************************************/
+
+.form_base {
+    margin: 115px auto 0px auto;
+    background:white;
+    box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+    height: 520px;
+    width: 28%;
+    border-radius: 4px;
+}
+
+.form_base h1 {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 200;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
+    background:rgb(2, 136, 209);
+}
+
+
+
+
+
+
+/***********************************************main form with input box**************************************************************************/
+
+
+.main_form {
+    background: white;
+    height: 48%;
+    width: 100%;
+}
+
+.input_box {
+    position: relative;
+    width: 65%;
+    margin: 40px auto 0px auto;
+    padding-bottom: 16px;
+}
+
+/***********************************************form input box**************************************************************************/
+
+
+.input_box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(2, 136, 209);
+    margin-bottom: 30x;
+    border: none;
+    border-bottom: 1.3px solid rgb(2, 136, 209);
+    outline: none;
+    background: transparent;
+}
+
+/***********************************************label for input**************************************************************************/
+
+
+.input_box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 15px;
+    color: rgb(2, 136, 209);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/**********************************************label focus**************************************************************************/
+
+
+.input_box input:focus~label,
+.input_box input:valid~label {
+    top: -18px;
+    left: 0;
+    color: black;
+    font-size: 12px;
+}
+
+
+.input_box .field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: 16px;
+    color: rgb(2, 136, 209);
+    z-index: 3;
+    cursor: pointer;
+    position: relative;
+}
+
+
+/***********************************************for_pass and for_pass_hover**************************************************************************/
+
+
+
+
+.main_form .remember-me{
+    width: 40%;
+    margin:6px 74px;
+}
+
+
+
+
+.container-check {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 500;
+}
+
+/* Hide the browser's default checkbox */
+.container-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 17px;
+    width: 17px;
+    background-color:#E0E0E0;
+}
+
+/* On mouse-over, add a grey background color */
+.container-check:hover input~.checkmark {
+    background-color: #E0E0E0;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-check input:checked~.checkmark {
+    background-color:rgb(2, 136, 209);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-check input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-check .checkmark:after {
+    left: 7px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+
+/***********************************************login button for login form**************************************************************************/
+
+
+
+.log-btn {
+    cursor: pointer;
+    margin-left: 74px;
+    margin-top: 40px;
+    height: 33px;
+    width: 66%;
+    display: block;
+    transition: 0.2s ease;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background: rgb(2, 136, 209);
+    border: 1.5px solid rgb(2, 136, 209);
+}
+
+.log-btn:hover {
+    border-color: #1565C0;
+    background:#1565C0;
+}
+
+
+
+.copyright {
+    text-align: center;
+    margin-top: 85px;
+}
+
+.copyright p {
+    color: rgb(2, 136, 209);
+    font-size: 11px;
+}
+
+
+
+
+/***********************************************************************container-4 used for overlay form***********************************************************/
+
+.container-4 {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0%;
+    top: 0%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 5;
+    display: none;
+    opacity: 0;
+
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background:rgb(189, 189, 189);
+}
+
+
+

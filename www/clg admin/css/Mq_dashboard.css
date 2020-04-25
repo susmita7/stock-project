@@ -1,0 +1,125 @@
+@media screen and (max-width: 400px){
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+        display: block;
+        position: relative;
+    } 
+
+    .side_menu {
+        width: 0;
+        height: 100vh;
+        background-image: url("sunset_bg_dash.png");
+        background-size: cover;
+        background-position: top;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top:0;
+        left:0;
+        display: none;
+        z-index: 99;
+    }
+
+
+
+    .admin img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin: 15px 0px 18px 75px;
+        border: 2px solid white;
+    }
+
+    .admin h4 {
+        font-size: 14px;
+        color: white;
+        text-align: center;
+    }
+
+    .admin a {
+        border: 1px solid white;
+        width: 80px;
+        text-align: center;
+        text-decoration: none !important;
+        color: rgb(2, 136, 209);
+        background: white;
+        border-radius: 20px;
+        font-size: 8px;
+        margin: 5px 0px 0px 88px;
+    }
+
+
+    .tabs {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 140px;
+        margin-bottom: 190px;
+    }
+
+    .con_tabs .con_tabs_links {
+        color: white;
+        margin: 10px 0px;
+        padding: 5px 0px;
+        text-decoration: none !important;
+        font-size: 14px;
+        letter-spacing: 1px;
+        width: 100%;
+        transition: .4s ease;
+    }
+
+    .con_tabs a i {
+        margin-right: 15px;
+        margin-left: 15%;
+    }
+
+
+
+    .top_content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        top: 80px;
+        left: 10px;
+        z-index: 5;
+    }
+
+    .side_menu_close_btn{
+        display: block;
+
+    }
+    
+
+    .top_nav h3 {
+        margin: 25px 0px 0px 10px;
+        font-size: 14px;
+        color: white;
+        font-weight: 400;
+    }
+
+    .top_nav .search_bar {
+      display: none;
+    }
+    
+    .top_nav .logout {
+        position: absolute;
+        top: 22px;
+        right: 17px;
+    }
+
+
+    .logout a {
+        color: white;
+        font-size: 14px;
+        text-decoration: none !important;
+        transition: .4s ease;
+    }
+}

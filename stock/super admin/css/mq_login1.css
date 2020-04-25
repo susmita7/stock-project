@@ -1,0 +1,286 @@
+@media screen and (max-width:760px) {
+
+    /***********************************************base***************************************************/
+
+    .wrapper {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+    }
+
+    /***********************************************svg***************************************************/
+
+    .top_image_bg {
+        height: 480px;
+        width: 100%;
+    }
+
+    .top_image_bg svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    /***********************************************heading and form ***************************************************/
+
+    .heading_form {
+        position: absolute;
+        top: 13%;
+        left: 0%;
+    }
+
+    /***********************************************headings***************************************************/
+
+
+    .heading_text {
+        background: transparent;
+        height: 300px;
+        display: none;
+    }
+
+    /***********************************************login form base and heading**********************************************/
+
+    .form_base {
+        margin: 0px auto 0px auto;
+    }
+
+    /***********************************************for_pass and for_pass_hover**************************************************************************/
+
+
+
+
+    .main_form .remember-me {
+        width: 40%;
+        margin: 6px 78px;
+    }
+
+
+    /***********************************************login button for login form**************************************************************************/
+
+
+
+    .log-btn {
+        margin-left: 78px;
+        margin-top: 40px;
+    }
+
+
+    /*********************************************************************** back buuton ***************************************************/
+
+
+    .down {
+        display: none;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:400px) {
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /***********************************************base***************************************************/
+
+    .wrapper {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+    }
+
+    /***********************************************svg***************************************************/
+
+    .top_image_bg {
+        height: 480px;
+        width: 100%;
+    }
+
+    .top_image_bg svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    /***********************************************heading and form ***************************************************/
+
+    .heading_form {
+        position: absolute;
+        top: 15%;
+        left: 0%;
+    }
+
+    /***********************************************headings***************************************************/
+
+
+    .heading_text {
+        background: transparent;
+        display: none;
+        height: 300px;
+    }
+
+
+    /***********************************************login form base and heading**********************************************/
+
+    .form_base {
+        background: white;
+        box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+        height: 500px;
+        width: 90%;
+        border-radius: 4px;
+    }
+
+    .form_base h1 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 200;
+        padding-top: 50px;
+        color: rgb(2, 136, 209);
+    }
+
+
+
+
+
+
+    /***********************************************main form with input box**************************************************************************/
+
+
+    .main_form {
+        background: white;
+        height: 55%;
+        width: 100%;
+    }
+
+    .input_box {
+        position: relative;
+        width: 65%;
+        margin: 40px auto 0px auto;
+        padding-bottom: 16px;
+    }
+
+    /***********************************************form input box**************************************************************************/
+
+
+    .input_box input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: rgb(2, 136, 209);
+        margin-bottom: 30x;
+        border: none;
+        border-bottom: 1.5px solid rgb(2, 136, 209);
+        outline: none;
+        background: transparent;
+    }
+
+    /***********************************************label for input**************************************************************************/
+
+
+    .input_box label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 14px;
+        color: rgb(2, 136, 209);
+        pointer-events: none;
+        transition: 0.5s;
+    }
+
+
+
+    /***********************************************for_pass and for_pass_hover**************************************************************************/
+
+
+
+
+    .main_form .remember-me {
+        width: 40%;
+        margin: 6px 50px;
+    }
+
+
+
+
+    .container-check {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 11px;
+        padding-left: 30px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-weight: 500;
+    }
+
+    /* Hide the browser's default checkbox */
+    .container-check input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 15px;
+        width: 15px;
+        background-color: #E0E0E0;
+    }
+
+
+    /* Style the checkmark/indicator */
+    .container-check .checkmark:after {
+        left: 6px;
+        top: 1.5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 2px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+
+
+
+    /***********************************************login button for login form**************************************************************************/
+
+
+
+    .log-btn {
+        cursor: pointer;
+        margin: 40px auto 0px auto;
+        height: 32px;
+    }
+
+
+
+    .copyright p {
+        font-size: 11px;
+    }
+
+
+
+    /*********************************************************************** back buuton ***************************************************/
+
+
+    .down {
+        display: none;
+    }
+
+
+
+}

@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading{
+    background:#EEEEEE;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.heading h1{
+    color: rgb(33,33,33);
+    padding: 5px 0px;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.about{
+    /* box-shadow: 0px 7px 20px 0px rgb(224, 224, 224); */
+    margin-top: 35px;
+    padding-bottom: 8px;
+}
+
+.service{
+    /* box-shadow: 0px 7px 20px 0px rgb(224, 224, 224); */
+    margin-top: 35px;
+    padding-bottom: 8px;
+}
+
+
+
+.about h2{
+    text-align: center;
+    color: rgb(33,33,33);
+    font-size: 32px;
+    padding-top: 10px;
+}
+
+/* .about hr{
+    width: 9%;
+    border: 1.2px solid rgb(2,136,209);
+    margin: 0px auto 0px auto;
+} */
+
+.about p{
+    color: rgb(33,33,33);
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.service h2{
+    text-align: center;
+    color: rgb(33,33,33);
+    font-size: 32px;
+    padding-top: 10px;
+}
+
+.service hr{
+    width: 9%;
+    border: 1.2px solid rgb(2,136,209);
+    margin: 0px auto 0px auto;
+}
+
+.service h3{
+    margin-top: 20px;
+    color:rgb(33,33,33);
+    font-size: 20px;  
+    border-left: 2px solid rgb(2,136,209);
+    padding-left: 5px;
+}
+
+.service p{
+    color: rgb(33,33,33);
+    font-size: 15px;
+    padding-top: 6px;
+}

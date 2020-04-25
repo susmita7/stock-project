@@ -1,0 +1,312 @@
+@media screen and (max-width:760px) {
+
+
+    /***********************************************************************container-2***********************************************************/
+    
+
+    .stockpile-logo {
+        position: absolute;
+        top: 40px;
+
+    }
+
+    .stockpile-logo h1 {
+        font-size: 40px;
+    }
+
+    .stockpile-logo h3 {
+        font-size: 30px;
+    }
+
+    /*************************************************** containers under container-2 for 3-divs ***************************************************/
+
+
+    .middle {
+        background: transparent;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 595px
+    }
+
+
+
+    /************************************************************details under container-2***********************************************************/
+
+
+    .heading {
+        font-size: 19px;
+    }
+
+    #para {
+        font-size: 14px;
+    }
+
+
+    /***********************************************************************div-2***********************************************************/
+
+    .div-2 {
+        margin: 0px 120px;
+    }
+
+    /***********************************************************************div-3***********************************************************/
+
+    .div-3 {
+        margin: 60px 125px;
+    }
+
+    /*********************************************************************** back buuton ***************************************************/
+
+
+    .down {
+        display: none;
+    }
+
+
+    /***********************************************************************container-3 used for overlay form***********************************************************/
+
+    #cross {
+        z-index: 6;
+        position: absolute;
+        top: 40px;
+        right: 50px;
+    }
+
+    #cross i {
+        font-size: 40px;
+        color: whitesmoke;
+    }
+
+
+
+    /***********************************************login form base and heading**********************************************/
+
+    .form_base {
+        margin: 115px auto 0px auto;;
+        height: 520px;
+        width: 78%;
+        border-radius: 4px;
+    }
+
+    .form_base h1 {
+        font-size: 40px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+
+    /***********************************************for_pass and for_pass_hover**************************************************************************/
+
+    .main_form .remember-me {
+        width: 40%;
+        margin: 6px 66px;
+    }
+
+    /***********************************************login button for login form**************************************************************************/
+
+    .log-btn {
+        margin-left: 66px;
+        margin-top: 40px;
+        height: 33px;
+        width: 66%;
+    }
+
+
+    .copyright {
+        text-align: center;
+        margin-top: 85px;
+    }
+
+    .copyright p {
+        color: rgb(2, 136, 209);
+        font-size: 11px;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:400px) {
+
+
+    /***********************************************************************container-2***********************************************************/
+
+    .stockpile-logo h1 {
+        font-size: 40px;
+    }
+
+    .stockpile-logo h3 {
+        font-size: 25px;
+    }
+
+    /*************************************************** containers under container-2 for 3-divs ***************************************************/
+
+
+    .middle {
+        margin-top: 370px
+    }
+
+    /************************************************************details under container-2***********************************************************/
+
+
+    .detail {
+        /* background: whitesmoke; */
+        margin-top: 22px;
+        margin-left: 13px;
+        width: 90%;
+        height: 75px;
+    }
+
+    .heading {
+        color: rgb(2, 136, 209);
+        font-weight: bold;
+        font-size: 17px;
+        margin-left: 6px;
+
+    }
+
+    #para {
+        font-weight: 100;
+        margin-top: 10px;
+        font-size: 13px;
+        margin-left: 6px;
+    }
+
+
+    /***********************************************************************div-2***********************************************************/
+
+    .div-2 {
+
+        border-radius: 10px;
+        background: white;
+        width: 265px;
+        height: 325px;
+        margin: 0px 60px;
+        box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+    }
+
+    /***********************************************************************div-3***********************************************************/
+
+    .div-3 {
+        border-radius: 10px;
+        background: white;
+        width: 265px;
+        height: 325px;
+        margin: 30px 60px;
+        box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+    }
+
+    /*********************************************************************** back buuton ***************************************************/
+
+
+    .down {
+        display: none;
+    }
+
+
+    /***********************************************************************container-3 used for overlay form***********************************************************/
+
+    #cross {
+        z-index: 6;
+        position: absolute;
+        top: 40px;
+        right: 33px;
+    }
+
+    #cross i {
+        font-size: 30px;
+        color: whitesmoke;
+    }
+
+
+
+    /***********************************************login form base and heading**********************************************/
+
+    .form_base {
+        margin: 140px auto 0px auto;
+        height: 480px;
+        width: 80%;
+    }
+
+    .form_base h1 {
+        font-size: 31px;
+    }
+
+    /***********************************************form input box**************************************************************************/
+
+
+    .input_box input {
+        font-size: 14px;;
+    }
+
+
+
+    /***********************************************for_pass and for_pass_hover**************************************************************************/
+
+
+
+
+    .main_form .remember-me {
+        width: 60%;
+        margin: 6px 50px;
+    }
+
+
+    .container-check {
+        font-size: 12px;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 15px;
+        width: 15px;
+        background-color: #E0E0E0;
+    }
+
+
+    /* Style the checkmark/indicator */
+    .container-check .checkmark:after {
+        left: 6px;
+        top: 1px;
+        width: 5px;
+        height: 10px;
+    }
+
+
+
+
+    /***********************************************login button for login form**************************************************************************/
+
+
+
+    .log-btn {
+        margin-left: 50px;
+        margin-top: 40px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .copyright {
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    .copyright p {
+        color: rgb(2, 136, 209);
+        font-size: 11px;
+    }
+
+
+
+
+}

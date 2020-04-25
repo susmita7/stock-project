@@ -1,0 +1,625 @@
+@media screen and (max-width:1366px) {
+    .upper {
+        width: 100%;
+        height: 440px;
+    }
+
+
+    .stockpile-logo h1 {
+        width: 100%;
+        font-size: 43px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 300;
+        padding: 26px;
+    }
+
+    .stockpile-logo h3 {
+        width: 100%;
+        font-size: 28px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    /*************************************************** div-1 and 2 and 3 with inner details and button *****************************************/
+
+
+
+    .header {
+        width: 260px;
+        height: 175px;
+    }
+
+    #pic {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        width: 250px;
+        height: 175px;
+        opacity: 0.6;
+
+    }
+
+
+
+    .button {
+        background: whitesmoke;
+        height: 43px;
+        width: 43px;
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        margin-left: 210px;
+        box-shadow: 0 0 16px rgba(77, 71, 71, 0.34);
+
+
+    }
+
+
+    .button:hover {
+        color: white;
+        background: rgb(2, 136, 209);
+        box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+
+    }
+
+
+    #user-logo>i {
+
+        margin-left: 10px;
+        font-size: 23px;
+        line-height: 42.5px;
+        transition: 0.6s ease;
+    }
+
+
+    /***********************************************************************div-2***********************************************************/
+
+    .div-2 {
+
+        border-radius: 10px;
+        background: white;
+        width: 250px;
+        height: 300px;
+        margin: 0px 80px;
+        box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+    }
+
+    /***********************************************************************div-3***********************************************************/
+
+    .div-3 {
+        border-radius: 10px;
+        background: white;
+        width: 250px;
+        height: 300px;
+        margin: 0px 80px;
+        box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+    }
+
+    /************************************************************details under container-2***********************************************************/
+
+
+    .detail {
+        /* background: whitesmoke; */
+        margin-top: 20px;
+        margin-left: 13px;
+        width: 90%;
+        height: 75px;
+    }
+
+    .heading {
+        color: rgb(2, 136, 209);
+        font-weight: bold;
+        font-size: 16px;
+        margin-left: 6px;
+
+    }
+
+    #para {
+        font-weight: 100;
+        margin-top: 10px;
+        font-size: 13px;
+        margin-left: 6px;
+    }
+
+    /*********************************************************************** back buuton ***************************************************/
+
+
+    .down {
+        position: absolute;
+        bottom: -3%;
+        left: 1%;
+    }
+
+
+    #cross i {
+        font-size: 35px;
+        color: whitesmoke;
+    }
+
+    /***********************************************login form base and heading**********************************************/
+
+    .form_base {
+        margin: 100px auto 0px auto;
+        background: white;
+        box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+        height: 490px;
+        width: 30%;
+        border-radius: 4px;
+    }
+
+    .form_base h1 {
+        text-align: center;
+        font-size: 39px;
+        font-weight: 200;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        color: white;
+        background: rgb(2, 136, 209);
+    }
+
+    /***********************************************form input box**************************************************************************/
+
+
+    .input_box input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 15px;
+        color: rgb(2, 136, 209);
+        margin-bottom: 30x;
+        border: none;
+        border-bottom: 1.3px solid rgb(2, 136, 209);
+        outline: none;
+        background: transparent;
+    }
+
+    /***********************************************label for input**************************************************************************/
+
+
+    .input_box label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 14px;
+        color: rgb(2, 136, 209);
+        pointer-events: none;
+        transition: 0.5s;
+    }
+
+    .input_box .field-icon {
+        float: right;
+        margin-left: -25px;
+        margin-top: 14px;
+        color: rgb(2, 136, 209);
+        z-index: 3;
+        cursor: pointer;
+        position: relative;
+    }
+
+
+    .main_form .remember-me {
+        width: 40%;
+        margin: 6px 72px;
+    }
+
+    .container-check {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 13px;
+        padding-left: 30px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-weight: 500;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 15px;
+        width: 15px;
+        background-color: #E0E0E0;
+    }
+
+    .container-check .checkmark:after {
+        left: 5px;
+        top: 1px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 2px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    /***********************************************login button for login form**************************************************************************/
+
+
+
+    .log-btn {
+        cursor: pointer;
+        margin: 40px auto 0px auto;
+        height: 31px;
+        width: 66%;
+        display: block;
+        transition: 0.2s ease;
+        border-radius: 3px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        background: rgb(2, 136, 209);
+        border: 1.5px solid rgb(2, 136, 209);
+    }
+
+    .copyright {
+        text-align: center;
+        margin-top: 82px;
+    }
+
+    .copyright p {
+        color: rgb(2, 136, 209);
+        font-size: 10px;
+    }
+
+}
+
+
+@media screen and (max-width:760px) {
+
+
+    /***********************************************************************container-2***********************************************************/
+
+
+    .stockpile-logo {
+        position: absolute;
+        top: 40px;
+
+    }
+
+    .stockpile-logo h1 {
+        font-size: 40px;
+    }
+
+    .stockpile-logo h3 {
+        font-size: 30px;
+    }
+
+    /*************************************************** containers under container-2 for 3-divs ***************************************************/
+
+
+    .middle {
+        background: transparent;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 595px
+    }
+
+
+
+    /************************************************************details under container-2***********************************************************/
+
+
+    .heading {
+        font-size: 19px;
+    }
+
+    #para {
+        font-size: 14px;
+    }
+
+
+    /***********************************************************************div-2***********************************************************/
+
+    .div-2 {
+        margin: 0px 120px;
+    }
+
+    /***********************************************************************div-3***********************************************************/
+
+    .div-3 {
+        margin: 60px 125px;
+    }
+
+    /*********************************************************************** back buuton ***************************************************/
+
+
+    .down {
+        display: none;
+    }
+
+
+    /***********************************************************************container-3 used for overlay form***********************************************************/
+
+    #cross {
+        z-index: 6;
+        position: absolute;
+        top: 40px;
+        right: 50px;
+    }
+
+    #cross i {
+        font-size: 40px;
+        color: whitesmoke;
+    }
+
+
+
+    /***********************************************login form base and heading**********************************************/
+
+    .form_base {
+        margin: 115px auto 0px auto;
+        ;
+        height: 520px;
+        width: 78%;
+        border-radius: 4px;
+    }
+
+    .form_base h1 {
+        font-size: 40px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+
+    /***********************************************for_pass and for_pass_hover**************************************************************************/
+
+    .main_form .remember-me {
+        width: 40%;
+        margin: 6px 66px;
+    }
+
+    /***********************************************login button for login form**************************************************************************/
+
+    .log-btn {
+        margin-left: 66px;
+        margin-top: 40px;
+        height: 33px;
+        width: 66%;
+    }
+
+
+    .copyright {
+        text-align: center;
+        margin-top: 85px;
+    }
+
+    .copyright p {
+        color: rgb(2, 136, 209);
+        font-size: 11px;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+
+
+    /***********************************************************************container-2***********************************************************/
+
+    .stockpile-logo h1 {
+        font-size: 37px;
+    }
+
+    .stockpile-logo h3 {
+        font-size: 24px;
+    }
+
+    /*************************************************** containers under container-2 for 3-divs ***************************************************/
+
+
+    .middle {
+        margin-top: 370px
+    }
+
+    /************************************************************details under container-2***********************************************************/
+
+
+    .detail {
+        /* background: whitesmoke; */
+        margin-top: 22px;
+        margin-left: 13px;
+        width: 90%;
+        height: 75px;
+    }
+
+    .heading {
+        color: rgb(2, 136, 209);
+        font-weight: bold;
+        font-size: 16px;
+        margin-left: 6px;
+
+    }
+
+    #para {
+        font-weight: 100;
+        margin-top: 10px;
+        font-size: 12px;
+        margin-left: 6px;
+    }
+
+    .header {
+        width: 240px;
+        height: 160px;
+    }
+
+    #pic {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        width: 240px;
+        height: 160px;
+        opacity: 0.6;
+
+    }
+
+
+    .button {
+        background: whitesmoke;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        margin-left: 200px;
+        box-shadow: 0 0 16px rgba(77, 71, 71, 0.34);
+
+
+    }
+
+    #user-logo>i {
+
+        margin-left: 10px;
+        font-size: 20px;
+        line-height: 38.5px;
+        transition: 0.6s ease;
+    }
+
+    /***********************************************************************div-2***********************************************************/
+
+    .div-2 {
+
+        border-radius: 10px;
+        background: white;
+        width: 240px;
+        height: 300px;
+        margin: 0px auto 0px auto;
+        box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+    }
+
+    /***********************************************************************div-3***********************************************************/
+
+    .div-3 {
+        border-radius: 10px;
+        background: white;
+        width: 240px;
+        height: 300px;
+        margin: 30px auto 0px auto;
+        box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+    }
+
+    /*********************************************************************** back buuton ***************************************************/
+
+
+    .down {
+        display: none;
+    }
+
+
+    /***********************************************************************container-3 used for overlay form***********************************************************/
+
+    #cross {
+        z-index: 6;
+        position: absolute;
+        top: 40px;
+        right: 33px;
+    }
+
+    #cross i {
+        font-size: 30px;
+        color: whitesmoke;
+    }
+
+
+
+    /***********************************************login form base and heading**********************************************/
+
+    .form_base {
+        margin: 140px auto 0px auto;
+        height: 480px;
+        width: 80%;
+    }
+
+    .form_base h1 {
+        font-size: 31px;
+    }
+
+    /***********************************************form input box**************************************************************************/
+
+
+    .input_box input {
+        font-size: 14px;
+        ;
+    }
+
+
+
+    /***********************************************for_pass and for_pass_hover**************************************************************************/
+
+
+
+
+    .main_form .remember-me {
+        width: 60%;
+        margin: 6px 50px;
+    }
+
+
+    .container-check {
+        font-size: 12px;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 15px;
+        width: 15px;
+        background-color: #E0E0E0;
+    }
+
+
+    /* Style the checkmark/indicator */
+    .container-check .checkmark:after {
+        left: 6px;
+        top: 1px;
+        width: 5px;
+        height: 10px;
+    }
+
+
+
+
+    /***********************************************login button for login form**************************************************************************/
+
+
+
+    .log-btn {
+        margin-left: 50px;
+        margin-top: 40px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .copyright {
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    .copyright p {
+        color: rgb(2, 136, 209);
+        font-size: 8px;
+    }
+
+
+
+
+}

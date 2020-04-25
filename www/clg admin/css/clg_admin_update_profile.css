@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.update_profile_page {
+    height:590px;
+    background: white;
+    width: 550px;
+    margin: 80px auto 0px auto;
+    box-shadow: 0px 7px 28px 0px rgb(224, 224, 224);
+    border-radius: 2px;
+}
+
+
+
+
+.update_profile_page .heading_pro {
+    height: 130px;
+    background: rgb(2, 136, 209);
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    border-radius: 2px;
+
+}
+
+.update_profile_page .heading_pro h1 {
+    padding-top: 15px;
+}
+
+.update_profile_page .pro_pic {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+/****************************************************input file*****************************************************/
+
+.box{
+    /* margin-top: 7px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+
+}
+
+.inputfile + label {
+    max-width: 60%;
+    font-size: 16px;
+    /* 20px */
+    font-weight: 200;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 3px 7px;
+    /* 10px 20px */
+
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    pointer-events: none;
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+/* style 2 */
+
+.inputfile-2 + label {
+    color: rgb(2, 136, 209);
+    border: 2px solid currentColor;
+    border-radius: 30px;
+    outline: none;
+
+}
+
+.inputfile-2:focus + label,
+.inputfile-2.has-focus + label,
+.inputfile-2 + label:hover {
+    color: rgb(2, 136, 209);
+    outline: none;
+}
+
+
+
+
+/*********************************************************************** back buuton ***************************************************/
+
+
+.down {
+    position: absolute;
+    bottom: 0%;
+    left: 1%;
+}
+
+.back_btn {
+
+    padding: 0;
+    text-align: center;
+}
+
+
+.back {
+
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50px;
+    overflow: hidden;
+    background: rgb(2, 136, 209);
+    height: 42px;
+
+}
+
+
+.back a {
+    display: block;
+    min-width: 38px;
+    max-width: 2em;
+    /* height: 1.8em; */
+    white-space: nowrap;
+    line-height: 44px;
+    transition: .8s;
+    text-decoration: none;
+    font-size: 21px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.back a i {
+    text-align: center;
+    margin-left: 11px;
+    margin-right: 9px;
+    padding-right: 5px;
+}
+
+.back:hover a {
+    padding-right: 20px;
+    max-width: 200px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+.main_update{
+    width: 70%;
+    margin: 70px auto 0px auto;
+}
+
+
+.main_update p{
+    margin: 15px 0px 0px 0px;
+    color: rgb(33,33,33);
+}
+
+.update_btn{
+    margin: 30px auto 0px auto;
+}
+
+.main_update input[type='submit']{
+
+     color: white;
+     background: rgb(2, 136, 209);
+     border: 1.5px solid rgb(2, 136, 209);
+     width: 100%;
+     font-size: 20px;
+     padding:2px 0px;
+     border-radius: 3px;
+     transition: .3s ease;
+}
+
+.main_update input[type='submit']:hover{
+    color: rgb(2, 136, 209);
+    background: white;
+}

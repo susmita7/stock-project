@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main_profile {
+    height: 440px;
+    background: white;
+    width: 550px;
+    margin: 110px auto 0px auto;
+    /* -webkit-box-shadow: 3px 11px 21px -2px rgba(173, 166, 173, 1);
+    -moz-box-shadow: 3px 11px 21px -2px rgba(173, 166, 173, 1);
+    box-shadow: 3px 11px 21px -2px rgba(173, 166, 173, 1); */
+    /* box-shadow: 5px 10px 16px rgb(238, 238, 238); */
+    box-shadow: 0px 7px 28px 0px rgb(224, 224, 224);
+    border-radius: 2px;
+}
+
+.main_profile .heading_pro {
+    height: 150px;
+    background: rgb(2, 136, 209);
+    color: white;
+    font-size: 23px;
+    font-weight: 100;
+    text-align: center;
+    border-radius: 2px;
+
+}
+
+.main_profile .heading_pro h1 {
+    padding-top: 15px;
+}
+
+.main_profile .pro_pic {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.details {
+    display: flex;
+    width: 65%;
+    background: white;
+    margin: 75px auto 0px auto;
+}
+
+.left_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.left_content h3 {
+    font-size: 19px;
+    color: rgb(2, 136, 209);
+    padding: 9px 0px;
+}
+
+.right_content h3 {
+    margin-left: 10px;
+    font-size: 19px;
+    color: rgb(2, 136, 209);
+    padding: 9px 0px;
+}
+
+.up_re_btn {
+    width: 100%;
+    margin: 15px auto 0px auto;
+    position: relative;
+    display: flex;
+    background: black;
+}
+
+.up_re_btn #up_pro {
+    border: 1.5px solid rgb(2, 136, 209);
+    width: 170px;
+    text-align: center;
+    text-decoration: none !important;
+    color: white;
+    background: rgb(2, 136, 209);
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 3px 7px;
+    transition: .6s ease;
+    position: absolute;
+    top: 4px;
+    left: 80px;
+}
+
+.up_re_btn #up_pro:hover {
+    color: rgb(2, 136, 209);
+    background: white;
+}
+
+.up_re_btn #re_pass {
+    border: 1.5px solid rgb(2, 136, 209);
+    width: 170px;
+    text-align: center;
+    text-decoration: none !important;
+    color: rgb(2, 136, 209);
+    background: white;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 3px 7px;
+    transition: .6s ease;
+    position: absolute;
+    top: 4px;
+    left: 294px;
+}
+
+.up_re_btn #re_pass:hover {
+    color: white;
+    background: rgb(2, 136, 209);
+}
+
+
+
+
+
+
+.update_profile_page {
+    display: none;
+    height: 520px;
+    background: white;
+    width: 550px;
+    margin: 80px auto 0px auto;
+    box-shadow: 0px 7px 28px 0px rgb(224, 224, 224);
+    border-radius: 2px;
+}
+
+
+
+
+.update_profile_page .heading_pro {
+    height: 130px;
+    background: rgb(2, 136, 209);
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    border-radius: 2px;
+
+}
+
+.update_profile_page .heading_pro h1 {
+    padding-top: 15px;
+}
+
+.update_profile_page .pro_pic {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+.box{
+    margin-top: 10px;
+}
+
+
+
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+
+}
+
+.inputfile + label {
+    max-width: 60%;
+    font-size: 16px;
+    /* 20px */
+    font-weight: 200;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 3px 7px;
+    /* 10px 20px */
+
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    pointer-events: none;
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+/* style 2 */
+
+.inputfile-2 + label {
+    color: rgb(2, 136, 209);
+    border: 2px solid currentColor;
+    border-radius: 30px;
+    outline: none;
+
+}
+
+.inputfile-2:focus + label,
+.inputfile-2.has-focus + label,
+.inputfile-2 + label:hover {
+    color: rgb(2, 136, 209);
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main_update{
+    width: 100%;
+}
+
+.main_update form{
+    width: 70%;
+    margin: 110px auto 0px auto;
+}
+
+.main_update p{
+    margin: 20px 0px 0px 0px;
+    color: rgb(2, 136, 209);
+}
+
+.update_btn{
+    margin: 30px auto 0px auto;
+}
+
+.main_update input[type='submit']{
+
+     color: white;
+     background: rgb(2, 136, 209);
+     border: 2px solid rgb(2, 136, 209);
+     width: 100%;
+     font-size: 20px;
+     padding:2px 0px;
+     border-radius: 3px;
+     transition: .4s ease;
+}
+
+.main_update input[type='submit']:hover{
+    color: rgb(2, 136, 209);
+    background: white;
+}
+
+
+
+
+
+

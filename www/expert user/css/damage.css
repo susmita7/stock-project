@@ -1,0 +1,146 @@
+.college {
+    width: 90%;
+    color:rgb(33, 33, 33);
+    margin: 60px auto 50px auto;
+}
+
+
+/*****************************************************************heading + add college div********************************************/
+
+.heading_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon_heading{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.icon_heading i{
+    margin-right: 10px;
+    font-size: 22px;
+    color: rgb(2, 136, 209);
+}
+
+.college h1 {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin: 0px;
+}
+
+
+.item_unit_btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+
+
+.search_bar{
+    position: relative;
+    width:240px;
+    height: 32px;
+    border-radius: 3px;
+}
+
+.search_bar input[type="text"]{
+    border: 1px solid rgb(33, 33, 33);
+    padding: 3px 8px;
+    width:240px;
+    height: 32px;
+    border-radius: 3px;
+    transition: all .3s ease;
+    float: right;
+    background: transparent;
+}
+
+.search_bar .icon{
+    position: absolute;
+    top:0;
+    right: 0;
+    background:transparent;
+    border: 1.5px solid rgb(2,136,209);
+    height: 100%;
+    width: 40px;
+    border-radius: 3px;
+    color:white;
+    background: rgb(2, 136, 209);
+}
+
+.search_bar .icon i{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+.table {
+    margin-top: 40px;
+}
+
+
+.table thead {
+    background: rgb(189, 189, 189);
+    color:rgb(33, 33, 33);
+    text-align: center;
+    font-size: 14px;
+}
+
+.table tr {
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+/**************************************************** sweet-alert **************************************/
+
+
+
+.swal-button {
+    padding: 7px 34px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    color:white;
+    background: rgb(2, 136, 209);
+    outline: none;
+    text-shadow: none;
+ }
+ 
+ .swal-button:not([disabled]):hover {
+    background-color:white;
+    color:rgb(2, 136, 209);
+ }
+ 
+ .swal-footer {
+    text-align: center;
+ }
+ 
+ .swal-modal {
+    background-color:white;
+    border-radius: 16px;
+    height: 320px;
+    width:400px;
+ }
+
+ .swal-title{
+     text-align: center;
+ }
+ 
+
+ .swal-text{
+     text-align: center;
+ }

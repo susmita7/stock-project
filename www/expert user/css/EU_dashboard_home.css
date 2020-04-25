@@ -1,0 +1,155 @@
+
+.content h1{
+    text-align: center;
+    font-size: 32px;
+    background: #EEEEEE;
+    width: 90%;
+    margin:33px auto 0px auto;
+    color: rgb(33,33,33);
+    padding: 4px 0px;
+}
+
+.heading_recurring{
+    background:transparent;
+    width: 90%;
+    margin:26px auto 0px auto;
+}
+
+.heading_non_recurring{
+    background:transparent;
+    width: 90%;
+    margin:26px auto 0px auto;
+}
+
+
+.heading_icon{
+    display: flex;
+    background:transparent;
+}
+
+.heading_icon i{
+    margin-right: 10px;
+    font-size: 20px;
+    color: rgb(2, 136, 209);
+}
+
+
+.heading_icon h2{
+    font-size: 20px;
+    color: rgb(33, 33, 33);
+    margin-bottom: 0px;
+}
+
+
+
+.recurring{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:23px auto 0px auto;
+    background:transparent;
+}
+
+.recurring .chart{
+    background: transparent;
+    padding: 12px 15px;
+    background: #EEEEEE;
+    margin-right: 25px;
+}
+
+.recurring .data{
+    background: transparent;
+    height:300px;
+    overflow: auto;
+}
+
+.heading_search{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*search*/
+
+
+.search_bar{
+    position: relative;
+    width:250px;
+    height: 28px;
+    border-radius: 3px;
+}
+
+.search_bar input[type="text"]{
+    border: .5px solid rgb(33,33,33);
+    padding: 0px 0px;
+    width:230px;
+    height: 28px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    transition: all .3s ease;
+    float: right;
+    background: transparent;
+    font-size: 14px;
+}
+
+.search_bar .icon{
+    position: absolute;
+    top:0;
+    right: 0;
+    background: rgb(2,136,209);
+    border: 1.5px solid rgb(2,136,209);
+    height: 100%;
+    width: 36px;
+    border-radius: 3px;
+    color:white;
+    transition: all 0.5s .2s ease;
+}
+
+.search_bar .icon i{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+
+}
+
+
+.non_recurring{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:23px auto 25px auto;
+    background:transparent;
+}
+
+.non_recurring .chart{
+    background: transparent;
+    padding: 12px 15px;
+    background: #EEEEEE;
+    margin-right: 25px;
+
+}
+
+.non_recurring .data{
+    background: transparent;
+    height:300px;
+    overflow: auto;
+    
+}
+
+
+
+
+/*********************************************************************table heading********************************************/
+.table thead {
+   background: rgb(2,136,209);
+   color:white;
+   text-align: center;
+   font-size: 12px;
+}
+
+ /*********************************************************************table row********************************************/
+
+.table tr {
+   text-align: center;
+   font-size: 12px;
+}
