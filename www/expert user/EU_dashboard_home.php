@@ -3,9 +3,9 @@
   $pair2=['pencil(bundle)'];
   $pair3=['paper(ream)'];
   $pair4=['pen(box)'];
-//   $name=['pen', 'pencil','paper','copy'];
-//   $unit=['packet','bundle','peice','no'];
-$name=[$pair,$pair2,$pair3,$pair4];
+  //   $name=['pen', 'pencil','paper','copy'];
+  //   $unit=['packet','bundle','peice','no'];
+  $name=[$pair,$pair2,$pair3,$pair4];
   $quan=[10,20,5,50];
   
   $quan2=[20,3,10,30];
@@ -24,7 +24,7 @@ $name=[$pair,$pair2,$pair3,$pair4];
     <!--------------------------------------------------css link----------------------------------------------------------->
     <link rel="stylesheet" type="text/css" href="css/EU_dashboard_home.css">
     <link rel="stylesheet" type="text/css" href="css/main_dashboard.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/Mq_dashboard.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/media_dashboard.css">
 
     <!--------------------------------------------------bootstrap css link----------------------------------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -36,8 +36,8 @@ $name=[$pair,$pair2,$pair3,$pair4];
 
 <body onload="renderDate()">
     <div class="wrapper">
-        <div class="side_menu">
-            <div class="side_menu_close_btn" onclick="side_menu_close()">
+        <div class="side_menu" id="menu">
+            <div class="side_menu_close_btn" onclick="side_menu_open()">
                 <a><i class="fas fa-window-close"></i></a>
             </div>
             <!---------------------------------- profile --------------------------------->
@@ -71,16 +71,15 @@ $name=[$pair,$pair2,$pair3,$pair4];
 
                     <a href="damage.php" class="con_tabs_links"><i class="fas fa-toolbox"></i>
                         Repair</a>
-                    <a href="#" class="con_tabs_links"><span class="counter_side_noti">
+                    <a href="order.php" class="con_tabs_links"><i class="fas fa-copy"></i> Order & file</a>
+                    <a href="notification.php" class="con_tabs_links"><span class="counter_side_noti">
                             <p>2</p>
                         </span><i class="fas fa-bell"></i> Notifications</a>
-
-                    <a href="#" class="con_tabs_links"><i class="fas fa-copy"></i> Orders</a>
+                    <a href="activity.php" class="con_tabs_links"><i class="fas fa-history"></i> Activity log</a>
                 </div>
             </div>
             <!---------------------------------------------------- copyright------------------------------------------->
             <div class="side_menu_footer">
-                <!-- <img src="images/stockpileLogo1.png"> -->
                 <div class="logo_title">
                     <img src="images/favicon.png">
                     <h3>STOCKPILE</h3>
@@ -91,12 +90,12 @@ $name=[$pair,$pair2,$pair3,$pair4];
         </div>
 
         <div class="top_content">
-            <div class="hamburger" onclick="side_menu_open()">
-                <a><i class="fas fa-bars"></i></a>
-            </div>
             <!---------------------------------- top_nav --------------------------------->
             <div class="top_nav">
                 <div class="top_nav_heading">
+                    <div class="hamburger" onclick="side_menu_open()">
+                      <a><i class="fas fa-bars"></i></a>
+                    </div>
                     <h3>Agriculture Statistics</h3>
                 </div>
 
@@ -152,7 +151,6 @@ $name=[$pair,$pair2,$pair3,$pair4];
 
                             </div>
                         </div>
-
                     </div>
                     <!---------------------------------- calculator --------------------------------->
                     <div class="cal">
@@ -191,12 +189,36 @@ $name=[$pair,$pair2,$pair3,$pair4];
                             </div>
                         </div>
                     </div>
-                    <!---------------------------------- notification --------------------------------->
+                    <!-------------------------------------------notification ---------------------------------->
                     <div class="noti">
                         <span class="counter">
                             <p>2</p>
                         </span>
-                        <i class="fas fa-bell" class="noti_bell"></i>
+                        <i class="fas fa-bell" class="noti_bell" onclick="show_notification()"></i>
+
+                        <div class="drop_noti" id="notification">
+
+                           <div class="noti_heading_btn">
+                           <h6>Notifications</h6>
+                           <a type="button">Read all</a>
+                           </div>
+                            
+
+                            <div class="notification">
+                                <div class="alert_icon">
+                                    <i class="noti_side_icon fa fa-user"></i>
+                                    <h3>Greeting</h3>
+                                </div>
+                                <div class="noti_content">
+                                    <h5>From Agricultural satistics</h5>
+                                    <p>order for recurring stock of agriculture statistics</p>
+                                    <div class="alert-time">6s ago</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <a href="">View all notifications</a>
+
+                        </div>
                     </div>
                     <!---------------------------------- logout --------------------------------->
                     <div class="logout">
@@ -209,6 +231,27 @@ $name=[$pair,$pair2,$pair3,$pair4];
             </div>
             <!---------------------------------- content div --------------------------------->
             <div class="content">
+
+
+            <!----------------------------------------------------welcome ---------------------------------------------->
+
+            <div class="welcome onload">
+                    <div class="user_icon">
+                        <i class="fas fa-smile"></i>
+                        
+                    </div>
+
+                    <div class="msg_body">
+                        <h5>Hey,Department Admin<h5><br>
+                        <p>You're finally ready, have a look around!<p>
+
+                    </div>
+                    <div class="cancel_icon">
+                        <i class="fas fa-times-circle" id="close"></i>
+                    </div>
+                </div>
+
+
                 <h1>Overview</h1>
 
                 <div class="heading_recurring">
@@ -291,10 +334,7 @@ $name=[$pair,$pair2,$pair3,$pair4];
                 </div>
 
                 <div class="heading_non_recurring">
-                    <!-- <div class="heading_icon">
-                        <i class="fas fa-cubes"></i>
-                        <h2>Non-Recurring Stock Details</h2>
-                    </div> -->
+
                     <div class="heading_search">
                         <div class="heading_icon">
                             <i class="fas fa-cubes"></i>
@@ -474,6 +514,19 @@ $name=[$pair,$pair2,$pair3,$pair4];
                 $("#myTable2 tr").filter(function () {
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 });
+            });
+        });
+
+
+        $(document).ready(function () {
+            $(".welcome").css('display', 'flex');
+
+            setTimeout(function () {
+                $(".welcome").fadeOut(1000);
+            }, 5000);
+
+            $("#close").click(function () {
+                $(".welcome").css('display', 'none');
             });
         });
     </script>

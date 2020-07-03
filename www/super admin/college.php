@@ -10,7 +10,7 @@
     <!--------------------------------------------------css link----------------------------------------------------------->
     <link rel="stylesheet" type="text/css" href="css/college.css">
     <link rel="stylesheet" type="text/css" href="css/main_dashboard.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/Mq_dashboard.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/media_dashboard.css">
 
     <!--------------------------------------------------bootstrap css link----------------------------------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -23,8 +23,8 @@
 <body onload="renderDate()">
 
     <div class="wrapper">
-        <div class="side_menu">
-            <div class="side_menu_close_btn" onclick="side_menu_close()">
+        <div class="side_menu" id="menu">
+            <div class="side_menu_close_btn" onclick="side_menu_open()">
                 <a><i class="fas fa-window-close"></i></a>
             </div>
             <div class="admin con_tabs">
@@ -58,11 +58,11 @@
 
         </div>
         <div class="top_content">
-            <div class="hamburger" onclick="side_menu_open()">
-                <a><i class="fas fa-bars"></i></a>
-            </div>
             <div class="top_nav">
                 <div class="top_nav_heading">
+                    <div class="hamburger" onclick="side_menu_open()">
+                        <a><i class="fas fa-bars"></i></a>
+                    </div>
                     <h3>Assam Agriculture University</h3>
                 </div>
 
@@ -120,11 +120,36 @@
 
                     </div>
 
+                    <!-------------------------------------------notification ---------------------------------->
                     <div class="noti">
                         <span class="counter">
                             <p>2</p>
                         </span>
-                        <i class="fas fa-bell" class="noti_bell"></i>
+                        <i class="fas fa-bell" class="noti_bell" onclick="show_notification()"></i>
+
+                        <div class="drop_noti" id="notification">
+
+                            <div class="noti_heading_btn">
+                                <h6>Notifications</h6>
+                                <a type="button">Read all</a>
+                            </div>
+
+
+                            <div class="notification">
+                                <div class="alert_icon">
+                                    <i class="noti_side_icon fa fa-user"></i>
+                                    <h3>Greeting</h3>
+                                </div>
+                                <div class="noti_content">
+                                    <h5>From Agricultural satistics</h5>
+                                    <p>order for recurring stock of agriculture statistics</p>
+                                    <div class="alert-time">6s ago</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <a href="">View all notifications</a>
+
+                        </div>
                     </div>
 
                     <div class="logout">

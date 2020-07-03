@@ -14,3 +14,15 @@ $(".toggle-password").click(function() {
       input.attr("type", "password");
     }
 });
+
+
+
+function get_form2() {
+  $('#form1').css('display', 'none');
+  $('#form2').css('display', 'block');
+}
+
+function get_form3() {
+  $('#form2').css('display', 'none');
+  $('#form3').css('display', 'block');
+}

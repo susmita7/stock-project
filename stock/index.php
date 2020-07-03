@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome | Stockpile</title>
+    <title>WELCOME | STOCKPILE</title>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <!--------------------------------------------------css link----------------------------------------------------------->
-    <link rel="stylesheet" type="text/css" href="css/index2.css">
+    <link rel="stylesheet" type="text/css" href="css/new_index.css">
     <link rel="stylesheet" type="text/css" href="css/mq_index1.css">
-    <link rel="stylesheet" type="text/css" href="css/mq_index2.css">
+
 
     <!--------------------------------------------------bootstrap css link----------------------------------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -42,7 +42,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span><i class="fas fa-bars"></i></span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -62,14 +62,14 @@
                                 <a class="nav-link" href="#contact"><i class="fas fa-address-card"></i>CONTACT</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" type="button" id="navbarDropdown" role="button"
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
                                         class="fas fa-sign-in-alt"></i>
                                     LOGIN
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="./super admin/login">SUPER ADMIN</a>
-                                    <a class="dropdown-item" href="./college admin/login">COLLEGE ADMIN</a>
+                                    <a class="dropdown-item" href="./superadmin/login">SUPER ADMIN</a>
+                                    <a class="dropdown-item" href="./collegeadmin/login">COLLEGE ADMIN</a>
                                 </div>
                             </li>
 
@@ -90,7 +90,7 @@
                                 <h2>STOCKPILE</h2>
 
                             </div>
-                            <h1 class="university text">ASSAM AGRICULTURE UNIVERSITY</h1>
+                            <h1 class="university text">ASSAM AGRICULTURAL UNIVERSITY</h1>
 
                             <p class="about_app text">STOCKPILE is an all-in-one online stock management
                                 system software. Organize
@@ -104,7 +104,6 @@
                                 <a href="choose" class="btn_1">
                                     <h3>Choose Department</h3>
                                 </a>
-
                             </div>
 
                         </div>
@@ -118,19 +117,17 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-7 about_us" data-aos="fade-right">
+                    <div class="col-md-7 about_us" data-aos="fade-up">
                         <h1>About Us</h1>
-                        <p>STOCKPILE is an all-in-one online inventory management software
-                            system.Organize
-                            your
-                            invoices, purchase orders and much more. It's easy-to-use and there's nothing to
-                            install.</p>
-                        <a href="#" class="btn_about">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur distinctio magnam
+                            mollitia natus ex tempore, impedit iusto est doloribus hic perspiciatis dicta autem dolores
+                            nisi!</p>
+                        <a onclick="overlay_about()" type="button" class="btn_about">
                             know More
                         </a>
                     </div>
-                    <div class="col-md-5">
-                        <img class="img_stock" src="images/about_stock_bg.png" data-aos="fade-left">
+                    <div class="col-md-5" data-aos="fade-up">
+                        <img class="img_stock" src="images/about_stock_bg.png">
                     </div>
                 </div>
             </div>
@@ -140,15 +137,12 @@
 
 
         <section class="sec_3" id="ser">
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="602">
-                <path
-                    d="M-107.755 165.832s83.126 87.888 120.658 189.513c32.832 88.895 156.531 254.51 342.904 197.548 186.373-56.964 204.06-113.301 370.712-52.939 166.652 60.363 222.255 149.92 412.275 71.124 190.02-78.795 351.326-10.476 351.326-10.476l28.792-94.176s-83.655-32.146-197.21-189.217c-113.555-157.072-225.23-183.155-289.499-171.647-52.83 9.46-221.097 64.394-359.828 32.737-130.176-29.707-190.258-67.96-273.289-111.789-103.36-54.559-168.214-9.074-233.136 13.43C101.028 62.445-44.089 53.616-67.284 54.638l-40.47 111.194z"
-                    fill="#1D98FF" fill-rule="evenodd" /></svg> -->
+
             <div class="base-slider">
 
                 <h1 class="ser-heading">What We Do</h1>
                 <hr>
-                <p class="ser-para">Manage your inventory and check stock levels in real-time. </p>
+                <p class="ser-para">Lorem ipsum dolor sit, amet consectetur. </p>
                 <i class="fas fa-chevron-left prev"></i>
                 <i class="fas fa-chevron-right next"></i>
                 <div class="main-slider">
@@ -162,9 +156,9 @@
                                 inventory
                                 notifications and generate
                                 purchase orders to replenish your stock.</p>
-                                <a href="#" class="btn_learn">
-                                    know More
-                                </a>
+                            <a class="btn_learn" onclick="overlay_ser()">
+                                know More
+                            </a>
 
                         </div>
                     </div>
@@ -179,9 +173,9 @@
                                 and types like
                                 equiptment,stationary ,
                                 furnicture etc.</p>
-                                <a href="#" class="btn_learn">
-                                    know More
-                                </a>
+                            <a class="btn_learn" onclick="overlay_ser()">
+                                know More
+                            </a>
                         </div>
                     </div>
                     <div class="slide">
@@ -194,9 +188,9 @@
                                 edit delete
                                 multiple users, and
                                 review their purchase history.</p>
-                                <a href="#" class="btn_learn">
-                                    know More
-                                </a>
+                            <a class="btn_learn" onclick="overlay_ser()">
+                                know More
+                            </a>
                         </div>
                     </div>
                     <div class="slide">
@@ -209,9 +203,9 @@
                                 and
                                 then instantly email them as
                                 PDF's directly to your customers or prospects.</p>
-                                <a href="#" class="btn_learn">
-                                    know More
-                                </a>
+                            <a onclick="overlay_ser()" class="btn_learn">
+                                know More
+                            </a>
                         </div>
                     </div>
                     <div class="slide">
@@ -224,9 +218,9 @@
                                 levels
                                 by ordering more stock and
                                 even track when those new items will arrive.</p>
-                                <a href="#" class="btn_learn">
-                                    know More
-                                </a>
+                            <a onclick="overlay_ser()" class="btn_learn">
+                                know More
+                            </a>
                         </div>
                     </div>
                     <div class="slide">
@@ -239,7 +233,7 @@
                                 members can
                                 see and do. Hide things,
                                 make things read-only, or hide everyone else's stuff.</p>
-                            <a href="#" class="btn_learn">
+                            <a onclick="overlay_ser()" class="btn_learn">
                                 know More
                             </a>
                         </div>
@@ -254,19 +248,16 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-5" data-aos="fade-right">
+                    <div class="col-md-5" data-aos="fade-up">
 
-                        <img class="img_stock" src="images/about_stock_bg.png">
+                        <img class="img_conatct" src="images/contact (3).png">
                     </div>
 
 
-                    <div class="col-md-7 contact_us" data-aos="fade-left">
+                    <div class="col-md-7 contact_us" data-aos="fade-up">
                         <h1>Contact Us</h1>
-                        <p>STOCKPILE is an all-in-one online inventory management software
-                            system.Organize
-                            your
-                            invoices, purchase orders and much more. It's easy-to-use and there's nothing to
-                            install.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores eius ipsam rerum doloremque
+                            inventore veniam quos? Animi praesentium maxime aliquid!</p>
 
                         <div class="email_ph">
                             <div class="email">
@@ -284,6 +275,20 @@
                             <div class="loc">
                                 <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
                                 <div class="details"><a>Jorhat,Assam</a></div>
+                            </div>
+                        </div>
+
+                        <div class="contact_des">
+                            <div class="con_tabs">
+                                <a href="mailto:stockpile123@gmail.com" class="con_tabs_links"><i
+                                        class="fas fa-1x fa-map-marker-alt"></i>
+                                    Jail Road,Jorhat(Assam),India</a>
+                                <a href="#" class="con_tabs_links">
+                                    <i class="fas fa-1x fa-phone-alt"></i> 0376-2395396
+                                </a>
+                                <a href="#" class="con_tabs_links">
+                                    <i class="fas fa-1x fa-envelope-open-text"></i>deanAAU@gmail.com
+                                </a>
                             </div>
                         </div>
 
@@ -307,13 +312,13 @@
                                 <a href="#home" class="con_tabs_links"><i class="fas fa-home"></i>
                                     Home</a>
                                 <a href="#about" class="con_tabs_links">
-                                    <i class="fas fa-align-center"></i>&nbspAbout Stockpile
+                                    <i class="fas fa-align-center"></i>&nbspAbout Us
                                 </a>
                                 <a href="#ser" class="con_tabs_links">
                                     <i class="fas fa-keyboard"></i>Services
                                 </a>
                                 <a href="#contact" class="con_tabs_links">
-                                    <i class="fas fa-address-card"></i>Contact with Stockpile
+                                    <i class="fas fa-address-card"></i>Contact with AAU
                                 </a>
                             </div>
                         </div>
@@ -327,6 +332,8 @@
                     <hr>
                     <div class="contact">
                         <div class="con_tabs">
+                            <a href="http://www.aau.ac.in/" class="con_tabs_links"><i class="fab fa-adn"></i>
+                                AAU official link</a>
                             <a href="#" class="con_tabs_links"><i class="fas fa-1x fa-map-marker-alt"></i>
                                 Jail Road,Jorhat(Assam),India</a>
                             <a href="#" class="con_tabs_links">
@@ -369,11 +376,121 @@
 
         </section>
         <div class="copyright text-center">
-            <p>All Rights Reserved by &copy;STOCKPILE, 2020</p>
+            <p>All Rights Reserved by &copy;STOCKPILE,2020</p>
         </div>
 
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+
+
+        <!---------------------------------------- overlay about------------------------------------>
+
+        <div class="overlay_about" id="overlay-about">
+            <a id="cross1" type="button" onclick="reverse_about()"><i class="fas fa-times-circle"></i></a>
+            <div class="container content_aau">
+
+                <div class="img">
+                    <img src="images/main_gate.jpg">
+                </div>
+                <div class="about">
+                    <h4>About AAU</h4>
+                    <p>Assam Agricultural University is the first institution of its kind in the whole of
+                        North-Eastern Region of India. The main goal of this institution is to produce globally
+                        competitive human resources in farm sectorand to carry out research in both conventional and
+                        frontier areas for production optimization as well as to disseminate the generated technologies
+                        as public good for benefitting the food growers/produces and traders involved in the sector
+                        while emphasizing on sustainability, equity and overall food security at household level.</p>
+                </div>
+            </div>
+
+
+
+            <div class="container content_stockpile">
+
+
+                <div class="about">
+                    <h4>About Stockpile</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad deleniti natus,
+                        repellendus placeat
+                        earum dignissimos at voluptatibus iste expedita voluptatum, exercitationem fuga vero ducimus ea
+                        dolorum aut molestiae iusto quasi nostrum deserunt delectus quisquam, consequuntur similique
+                        veniam! Unde nisi harum adipisci rem labore voluptatibus, dolorem quaerat modi commodi
+                        perspiciatis fugit veniam accusamus magni, dolore deserunt laboriosam dolorum ipsa amet ab
+                        ducimus consectetur reprehenderit laborum expedita dolores. Corrupti non dolorum distinctio
+                        sapiente perferendis quia velit exercitationem aperiam eum odit maxime cupiditate, inventore
+                        libero dolore possimus.</p>
+
+                </div>
+
+                <div class="img">
+                    <img src="images/box.jpg">
+                </div>
+            </div>
+        </div>
+
+
+        <!---------------------------------------- overlay services ------------------------------------>
+
+        <div class="overlay_about" id="overlay-ser">
+            <a id="cross2" onclick="reverse_ser()"><i class="fas fa-times-circle"></i></a>
+
+            <div class="container ser_content">
+                <h3 class="anim">What we do</h3>
+                <div class="icon_head_ser">
+                    <i class="fas fa-angle-double-right"></i>
+                    <h2>Inventory Management</h2>
+                </div>
+
+                <p class="anim">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorem totam officiis
+                    aliquid,
+                    tempore quidem ipsa nulla ullam tempora suscipit pariatur, accusantium obcaecati doloremque animi
+                    fuga laudantium provident rem explicabo? Nam soluta dicta eveniet accusantium.</p>
+                <div class="icon_head_ser">
+                    <i class="fas fa-angle-double-right"></i>
+                    <h2>Inventory Management</h2>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorem totam officiis aliquid,
+                    tempore quidem ipsa nulla ullam tempora suscipit pariatur, accusantium obcaecati doloremque animi
+                    fuga laudantium provident rem explicabo? Nam soluta dicta eveniet accusantium.</p>
+                <div class="icon_head_ser">
+                    <i class="fas fa-angle-double-right"></i>
+                    <h2>Inventory Management</h2>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorem totam officiis aliquid,
+                    tempore quidem ipsa nulla ullam tempora suscipit pariatur, accusantium obcaecati doloremque animi
+                    fuga laudantium provident rem explicabo? Nam soluta dicta eveniet accusantium.</p>
+                <div class="icon_head_ser">
+                    <i class="fas fa-angle-double-right"></i>
+                    <h2>Inventory Management</h2>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorem totam officiis aliquid,
+                    tempore quidem ipsa nulla ullam tempora suscipit pariatur, accusantium obcaecati doloremque animi
+                    fuga laudantium provident rem explicabo? Nam soluta dicta eveniet accusantium.</p>
+                <div class="icon_head_ser">
+                    <i class="fas fa-angle-double-right"></i>
+                    <h2>Inventory Management</h2>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorem totam officiis aliquid,
+                    tempore quidem ipsa nulla ullam tempora suscipit pariatur, accusantium obcaecati doloremque animi
+                    fuga laudantium provident rem explicabo? Nam soluta dicta eveniet accusantium.</p>
+                <div class="icon_head_ser">
+                    <i class="fas fa-angle-double-right"></i>
+                    <h2>Inventory Management</h2>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorem totam officiis aliquid,
+                    tempore quidem ipsa nulla ullam tempora suscipit pariatur, accusantium obcaecati doloremque animi
+                    fuga laudantium provident rem explicabo? Nam soluta dicta eveniet accusantium.</p>
+
+            </div>
+        </div>
     </main>
+
+
+
 
     <!--------------------------------------------------AOS js link----------------------------------------------------------->
 
@@ -399,7 +516,7 @@
     <!--------------------------------------------------js link----------------------------------------------------------->
 
 
-    <script src="js/index.js"></script>
+    <script src="js/new_index.js"></script>
 
 
 

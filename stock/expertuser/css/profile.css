@@ -1,0 +1,717 @@
+.base_profile{
+    width: 65%;
+    display: flex;
+    margin: 130px auto 0px auto;
+    box-shadow: 0px 7px 28px 0px rgb(224, 224, 224);
+    background: white;
+}
+
+.middle{
+    width:2px;
+    margin-top: 30px ;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    border-radius: 40px;
+    background: rgb(2, 136, 209);
+}
+
+.left_side{
+    width: 40%;
+    background: white;
+    margin: 10px;
+}
+
+.left_side .heading h3{
+    font-size: 30px;
+    text-align: center;
+    color:rgb(2, 136, 209);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.left_side .pic{
+    margin: 0px auto 0px auto;
+    width: 155px;
+    margin-bottom: 30px;
+
+}
+
+.left_side .pic img{
+    border-radius: 50%;
+    height:155px ;
+    width: 155px;
+
+}
+
+.left_side .icons{
+    display: flex;
+    justify-content: space-between;
+    width: 53%;
+
+    margin: 0px auto 40px auto;
+}
+
+.left_side .icons a i{
+  padding: 11px 11px;
+  border-radius: 50%;
+  color: rgb(2, 136, 209);
+  font-size: 22px;
+  transition: .3s ease;
+}
+
+.left_side .icons a i:hover{
+    background: #EEEEEE;
+}
+
+
+
+
+.right_side{
+    width: 60%;
+    background: white;
+}
+
+.right_side .info{
+    padding: 65px 30px 45px ;
+    /* padding: 90px 30px 45px ; */
+}
+
+.right_side .info h4{
+   font-size: 18px;
+   color: rgb(33,33,33);
+   padding-top: 20px;
+}
+
+.right_side .up_re_btn{
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
+    padding-left: 30px;
+    
+}
+
+
+.right_side .up_re_btn #up_pro {
+    border: 1.5px solid rgb(2, 136, 209);
+    width: 170px;
+    text-align: center;
+    text-decoration: none !important;
+    color: white;
+    background: rgb(2, 136, 209);
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 3px 7px;
+    transition: .1s ease;
+    
+}
+
+.right_side .up_re_btn #up_pro:hover {
+    color:rgb(2, 136, 209);
+    background: white;
+}
+
+.right_side .up_re_btn #re_pass {
+    border: 1.5px solid rgb(2, 136, 209);
+    width: 170px;
+    text-align: center;
+    text-decoration: none !important;
+    color: rgb(2, 136, 209);
+    background: white;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 3px 7px;
+    transition: .1s ease;
+}
+
+.right_side .up_re_btn #re_pass:hover {
+    color: white;
+    background: rgb(2, 136, 209);
+}
+
+
+
+
+
+
+
+
+/***************************************************************overlay update********************************************/
+
+
+.overlay_update {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .7);
+    z-index: 5;
+    display: none;
+    opacity: 0;
+
+}
+
+/***************************************************************cross********************************************/
+
+#cross {
+    z-index: 6;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+}
+
+#cross i {
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+
+
+
+/****************************************************update profile part********************************************/
+
+
+.update_profile_page {
+    height:555px;
+    background: white;
+    width: 535px;
+    margin: 95px auto 0px auto;
+    border-radius: 2px;
+}
+
+
+
+
+.update_profile_page .heading_pro {
+    height: 130px;
+    background: rgb(2, 136, 209);
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    border-radius: 2px;
+
+}
+
+.update_profile_page .heading_pro h1 {
+    padding-top: 20px;
+    font-size: 35px;
+}
+
+.update_profile_page .pro_pic {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+/****************************************************input file*****************************************************/
+
+.box{
+    /* margin-top: 7px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+
+}
+
+.inputfile + label {
+    max-width: 60%;
+    font-size: 15px;
+    /* 20px */
+    font-weight: 200;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 3px 7px;
+    /* 10px 20px */
+    margin-bottom: 0px;
+
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    pointer-events: none;
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+/* style 2 */
+
+.inputfile-2 + label {
+    color: rgb(2, 136, 209);
+    border: 1px solid currentColor;
+    border-radius: 3px;
+    outline: none;
+
+}
+
+.inputfile-2:focus + label,
+.inputfile-2.has-focus + label,
+.inputfile-2 + label:hover {
+    color: rgb(2, 136, 209);
+    outline: none;
+}
+
+
+
+
+/*********************************************************main_update_form ***************************************************/
+
+
+.main_update{
+    width: 70%;
+    margin: 74px auto 0px auto;
+}
+
+
+.main_update p{
+    margin: 13px 0px 0px 0px;
+    color: rgb(33,33,33);
+    font-size: 15px;
+}
+
+.update_btn{
+    margin: 30px auto 0px auto;
+}
+
+.main_update input[type='submit']{
+
+     color: white;
+     background: rgb(2, 136, 209);
+     border: 1.5px solid rgb(2, 136, 209);
+     width: 100%;
+     font-size: 17px;
+     padding:3px 0px;
+     border-radius: 3px;
+     transition: .3s ease;
+}
+
+.main_update input[type='submit']:hover{
+    background:#1565C0;
+    border-color: #1565C0;
+}
+
+
+
+
+/***************************************************************overlay password********************************************/
+
+
+.overlay_pass {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .7);
+    z-index: 5;
+    display: none;
+    opacity: 0;
+
+}
+
+
+/****************************************************update profile part********************************************/
+
+
+.password_profile_page {
+    height:515px;
+    background: white;
+    width: 535px;
+    margin: 120px auto 0px auto;
+    border-radius: 2px;
+}
+
+.password_profile_page .heading_pro {
+    height: 130px;
+    background: rgb(2, 136, 209);
+    color: white;
+    /* font-size: 18px; */
+    font-weight: 100;
+    text-align: center;
+    border-radius: 2px;
+
+}
+
+.password_profile_page .heading_pro h1 {
+    padding-top: 20px;
+    font-size: 35px;
+}
+
+.password_profile_page .pro_pic {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+
+
+
+
+/*********************************************************main_pass_form ***************************************************/
+
+
+.main_pass{
+    width: 70%;
+    margin: 55px auto 0px auto;
+}
+
+
+.main_pass p{
+    margin: 18px 0px 0px 0px;
+    color: rgb(33,33,33);
+    font-size: 15px;
+}
+
+.main_pass .update_btn{
+    margin: 30px auto 0px auto;
+}
+
+.main_pass input[type='submit']{
+
+     color: white;
+     background: rgb(2, 136, 209);
+     border: 1.5px solid rgb(2, 136, 209);
+     width: 100%;
+     font-size: 17px;
+     padding:3.5px 0px;
+     border-radius: 3px;
+     transition: .3s ease;
+}
+
+.main_pass input[type='submit']:hover{
+    background:#1565C0;
+    border-color: #1565C0;
+}
+
+
+
+
+/*********************************************media for 600********************************/
+
+@media screen and (max-width:600px) {
+
+    .base_profile{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        margin: 90px auto 0px auto;
+        box-shadow: 0px 7px 28px 0px rgb(224, 224, 224);
+        background: white;
+    }
+    
+    .middle{
+        width:80%;
+        height: 1px;
+        margin-left: 30px ;
+        margin-right: 30px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        border-radius: 40px;
+        background: rgb(2, 136, 209);
+    }
+    
+    .left_side{
+        width: 100%;
+        background: white;
+        margin: 0px;
+    }
+    
+    .left_side .heading h3{
+        font-size: 20px;
+        text-align: center;
+        color:rgb(2, 136, 209);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .left_side .pic{
+        margin: 0px auto 0px auto;
+        width: 100px;
+        margin-bottom: 20px;
+    
+    }
+    
+    .left_side .pic img{
+        border-radius: 50%;
+        height:100px ;
+        width: 100px;
+    
+    }
+    
+    .left_side .icons{
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+        margin: 0px auto 10px auto;
+    }
+    
+    .left_side .icons a i{
+      font-size: 18px;
+    }
+
+    
+    .right_side{
+        width: 100%;
+        background: white;
+        padding-bottom: 50px;
+    }
+    
+    .right_side .info{
+        padding: 0px 10px 20px ;
+    }
+    
+    .right_side .info h4{
+       text-align: center;
+       font-size: 12px;
+       color: rgb(33,33,33);
+       padding-top: 9px;
+    }
+    
+    .right_side .up_re_btn{
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: 0px auto 0px auto;
+        padding-left: 0px;
+    }
+    
+    
+    .right_side .up_re_btn #up_pro {
+        border: 1.5px solid rgb(2, 136, 209);
+        width: 100px;
+        text-align: center;
+        text-decoration: none !important;
+        color: white;
+        background: rgb(2, 136, 209);
+        border-radius: 4px;
+        font-size: 10px;
+        padding: 3px 5px;
+        transition: .1s ease;
+        
+    }
+    
+
+    
+    .right_side .up_re_btn #re_pass {
+        border: 1.5px solid rgb(2, 136, 209);
+        width: 100px;
+        text-align: center;
+        text-decoration: none !important;
+        color: rgb(2, 136, 209);
+        background: white;
+        border-radius: 4px;
+        font-size: 10px;
+        padding: 3px 5px;
+        transition: .1s ease;
+    }
+    
+
+
+
+
+
+
+
+
+    #cross {
+        z-index: 6;
+        position: absolute;
+        top: 30px;
+        right: 35px;
+    }
+
+    #cross i {
+        font-size: 25px;
+        color: whitesmoke;
+    }
+
+    /****************************************************update profile part********************************************/
+
+
+    .update_profile_page {
+        height: 460px;
+        background: white;
+        width: 300px;
+        margin: 100px auto 0px auto;
+        border-radius: 2px;
+    }
+
+
+
+
+    .update_profile_page .heading_pro {
+        height: 100px;
+        background: rgb(2, 136, 209);
+        color: white;
+        font-weight: 100;
+        text-align: center;
+        border-radius: 2px;
+
+    }
+
+    .update_profile_page .heading_pro h1 {
+        padding-top: 20px;
+        font-size: 25px;
+    }
+
+    .update_profile_page .pro_pic {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        border: 5px solid white;
+    }
+
+    /*********************************************************main_update_form ***************************************************/
+
+
+    .main_update {
+        width: 70%;
+        margin: 54px auto 0px auto;
+    }
+
+
+    .main_update p {
+        margin: 13px 0px 0px 0px;
+        color: rgb(33, 33, 33);
+        font-size: 12px;
+    }
+
+    .update_btn {
+        margin: 25px auto 0px auto;
+    }
+
+    .main_update input[type='submit'] {
+
+        color: white;
+        background: rgb(2, 136, 209);
+        border: 1.5px solid rgb(2, 136, 209);
+        width: 100%;
+        font-size: 13px;
+        padding: 3px 0px;
+        border-radius: 3px;
+        transition: .3s ease;
+    }
+
+    .inputfile+label {
+        max-width: 60%;
+        font-size: 11px;
+        /* 20px */
+        font-weight: 200;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+        display: inline-block;
+        overflow: hidden;
+        padding: 3px 7px;
+        /* 10px 20px */
+        margin-bottom: 0px;
+
+    }
+
+
+    /****************************************************update profile part********************************************/
+
+
+    .password_profile_page {
+        height: 420px;
+        background: white;
+        width: 300px;
+        margin: 120px auto 0px auto;
+        border-radius: 2px;
+    }
+
+    .password_profile_page .heading_pro {
+        height: 100px;
+        background: rgb(2, 136, 209);
+        color: white;
+        /* font-size: 18px; */
+        font-weight: 100;
+        text-align: center;
+        border-radius: 2px;
+
+    }
+
+    .password_profile_page .heading_pro h1 {
+        padding-top: 20px;
+        font-size: 20px;
+    }
+
+    .password_profile_page .pro_pic {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        border: 5px solid white;
+    }
+
+
+
+
+
+    /*********************************************************main_pass_form ***************************************************/
+
+
+    .main_pass {
+        width: 70%;
+        margin: 45px auto 0px auto;
+    }
+
+
+    .main_pass p {
+        margin: 10px 0px 0px 0px;
+        color: rgb(33, 33, 33);
+        font-size: 12px;
+    }
+
+    .main_pass .update_btn {
+        margin: 25px auto 0px auto;
+    }
+
+    .main_pass input[type='submit'] {
+
+        color: white;
+        background: rgb(2, 136, 209);
+        border: 1.5px solid rgb(2, 136, 209);
+        width: 100%;
+        font-size: 13px;
+        padding: 3.5px 0px;
+        border-radius: 3px;
+        transition: .3s ease;
+    }
+
+}
+
+

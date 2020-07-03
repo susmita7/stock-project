@@ -89,6 +89,12 @@ function show_calendar() {
 }
 
 
+function side_menu_open(){
+    var menu = document.getElementById("menu");
+    menu.classList.toggle("open");
+}
+
+
 
 
 

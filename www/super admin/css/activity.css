@@ -1,0 +1,203 @@
+/********************************************************************* complete base********************************************/
+
+.college {
+    width: 90%;
+    color: rgb(33, 33, 33);
+    margin: 60px auto 50px auto;
+}
+
+/*****************************************************************heading + add college div********************************************/
+
+.heading_add_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon_heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_heading i {
+    margin-right: 10px;
+    font-size: 22px;
+    color: rgb(2, 136, 209);
+}
+
+
+.item_unit_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 340px;
+}
+
+
+.search_bar {
+    position: relative;
+    width: 250px;
+    height: 31px;
+    border-radius: 3px;
+}
+
+.search_bar input[type="text"] {
+    border: .5px solid rgb(2, 136, 209);
+    padding: 0px 0px;
+    width: 0px;
+    height: 31px;
+    border-radius: 3px;
+    transition: all .3s ease;
+    float: right;
+    background: transparent;
+}
+
+.search_bar .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: 1.5px solid rgb(2, 136, 209);
+    height: 100%;
+    width: 40px;
+    border-radius: 3px;
+    color: rgb(2, 136, 209);
+    transition: all 0.5s .2s ease;
+}
+
+.search_bar .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+}
+
+.search_bar .icon.show_search {
+    background: rgb(2, 136, 209);
+    color: white;
+    transition: all .3s ease;
+}
+
+.search_bar input[type="text"].show_search {
+    width: 250px;
+    padding: 3px 8px;
+    transition: all 0.5s .2s ease;
+}
+
+
+/*********************************************************************top heading********************************************/
+
+.college h1 {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin: 0px;
+    color: rgb(33, 33, 33);
+}
+
+
+/***********************************************************delete college********************************************/
+
+#add_clg {
+    border: 1.5px solid rgb(2, 136, 209);
+    text-align: center;
+    text-decoration: none !important;
+    color: white;
+    background: rgb(2, 136, 209);
+    font-size: 14px;
+    padding: 3px 7px;
+    transition: .2s ease;
+    border-radius: 3px;
+}
+
+#add_clg:hover {
+    border-color: #1976D2;
+    background: #1976D2;
+}
+
+#del{
+    border: 1.5px solid rgb(229, 57, 53);
+    text-align: center;
+    text-decoration: none !important;
+    color: white;
+    background: rgb(229, 57, 53);
+    font-size: 12px;
+    padding: 3px 7px;
+    transition: .2s ease;
+    border-radius: 3px;
+}
+
+#del:hover {
+    border-color: #B71C1C;
+    background: #B71C1C;
+}
+
+
+.base_ac {
+    width: 90%;
+    margin: 20px auto 0px auto;
+    display: flex;
+    background: pink;
+    box-shadow: 0px 0px 15px 4px rgba(238, 238, 238, 0.5);
+}
+
+
+.base_ac .suc_icon {
+    width: 7%;
+    background: rgb(2, 136, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.base_ac .suc_icon i {
+    font-size: 17px;
+    color: white;
+}
+
+
+.base_ac .ac {
+    width: 85%;
+    padding: 10px 30px;
+    background: white;
+}
+
+
+.base_ac .ac p {
+    font-size: 14px;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.base_ac .ac_del {
+    display: flex;
+    justify-content: center;
+    padding: 18px 18px;
+    width: 12%;
+    align-items: center;
+    background: #eeeeee;
+}
+
+.time_date {
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+
+}
+
+.time_date i{
+    margin-right: 2px;
+    font-size: 10px;
+    color: rgb(2, 136, 209);
+}
+
+
+.time_date h4 {
+    margin-top: 6px;
+    font-size: 10px;
+    color: rgb(2, 136, 209);
+}

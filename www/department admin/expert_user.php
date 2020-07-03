@@ -10,7 +10,7 @@
     <!--------------------------------------------------css link----------------------------------------------------------->
     <link rel="stylesheet" type="text/css" href="css/expert_user.css">
     <link rel="stylesheet" type="text/css" href="css/main_dashboard.css">
-
+    <link rel="stylesheet" type="text/css" href="css/media_dashboard.css">
     <!--------------------------------------------------bootstrap css link----------------------------------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!--------------------------------------------------font asesome link----------------------------------------------------------->
@@ -21,8 +21,8 @@
 
 <body onload="renderDate()">
     <div class="wrapper">
-        <div class="side_menu">
-            <div class="side_menu_close_btn" onclick="side_menu_close()">
+        <div class="side_menu" id="menu">
+            <div class="side_menu_close_btn" onclick="side_menu_open()">
                 <a><i class="fas fa-window-close"></i></a>
             </div>
 
@@ -35,18 +35,19 @@
             <!---------------------------------------------------- side manu tabs ------------------------------------>
             <div class="tabs">
                 <div class="con_tabs">
-                    <a href="dept_admin_dashboard_home.php" class="con_tabs_links"><i class="fas fa-home"></i>
-                        Home</a>
+                <a href="dept_admin_dashboard_home.php" class="con_tabs_links ac"><i class="fas fa-home"></i>
+                        Dashboard</a>
 
-                    <a href="expert_user.php" class="con_tabs_links ac"><i class="fas fa-user"></i>
+                    <a href="expert_user.php" class="con_tabs_links"><i class="fas fa-user"></i>
                         Expert users</a>
                     <a href="stock_group.php" class="con_tabs_links"><i class="fas fa-object-group"></i>
-                        Stock_groups</a>
-                    <a href="#" class="con_tabs_links"><i class="fas fa-cubes"></i> Stocks</a>
-                    <a href="#" class="con_tabs_links"><i class="fas fa-copy"></i> Orders</a>
-                    <a href="#" class="con_tabs_links"><span class="counter_side_noti">
+                        Stock groups</a>
+                    <a href="stock.php" class="con_tabs_links"><i class="fas fa-cubes"></i> Stock details</a>
+                    <a href="order.php" class="con_tabs_links"><i class="fas fa-copy"></i> File details</a>
+                    <a href="notification.php" class="con_tabs_links"><span class="counter_side_noti">
                             <p>2</p>
                         </span><i class="fas fa-bell"></i> Notifications</a>
+                    <a href="activity.php" class="con_tabs_links"><i class="fas fa-history"></i> Activity log</a>
 
                 </div>
             </div>
@@ -63,13 +64,14 @@
         </div>
         <!---------------------------------------------------top nav ---------------------------------------------->
         <div class="top_content">
-            <div class="hamburger" onclick="side_menu_open()">
-                <a><i class="fas fa-bars"></i></a>
-            </div>
+
             <div class="top_nav">
                 <!---------------------------------------------------- heading ------------------------------------------>
                 <div class="top_nav_heading">
-                    <h3>Assam Agriculture University</h3>
+                    <div class="hamburger" onclick="side_menu_open()">
+                        <a><i class="fas fa-bars"></i></a>
+                    </div>
+                    <h3>Basic Science & humanities Department</h3>
                 </div>
 
                 <div class="top_nav_contents">
@@ -147,6 +149,8 @@
             </div>
 
             <div class="content">
+
+
 
 
                 <div class="college">
@@ -358,6 +362,9 @@
             });
         });
     </script>
+
+
+
 </body>
 
 </html>

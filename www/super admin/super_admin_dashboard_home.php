@@ -10,7 +10,7 @@
     <!--------------------------------------------------css link----------------------------------------------------------->
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="css/main_dashboard.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/Mq_dashboard.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/media_dashboard.css">
 
     <!--------------------------------------------------bootstrap css link----------------------------------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -23,8 +23,8 @@
 <body onload="renderDate()">
 
     <div class="wrapper">
-        <div class="side_menu">
-            <div class="side_menu_close_btn" onclick="side_menu_close()">
+        <div class="side_menu" id="menu">
+            <div class="side_menu_close_btn" onclick="side_menu_open()">
                 <a><i class="fas fa-window-close"></i></a>
             </div>
             <div class="admin con_tabs">
@@ -41,9 +41,10 @@
 
                     <a href="clg_admin.php" class="con_tabs_links"><i class="fas fa-user"></i>&nbsp
                         Clg_admins</a>
-                    <a href="#" class="con_tabs_links"><span class="counter_side_noti">
+                    <a href="notification.php" class="con_tabs_links"><span class="counter_side_noti">
                             <p>2</p>
                         </span><i class="fas fa-bell"></i>&nbsp Notifications</a>
+                    <a href="activity.php" class="con_tabs_links"><i class="fas fa-history"></i> Activity log</a>
                 </div>
             </div>
             <!---------------------------------------------------- copyright------------------------------------------->
@@ -57,12 +58,12 @@
             </div>
         </div>
         <div class="top_content">
-            <div class="hamburger" onclick="side_menu_open()">
-                <a><i class="fas fa-bars"></i></a>
-            </div>
             <div class="top_nav">
                 <div class="top_nav_heading">
-                    <h3>Assam Agriculture University</h3>
+                    <div class="hamburger" onclick="side_menu_open()">
+                        <a><i class="fas fa-bars"></i></a>
+                    </div>
+                    <h3>Assam Agricultural University</h3>
                 </div>
 
                 <div class="top_nav_contents">
@@ -140,6 +141,69 @@
             </div>
 
             <div class="content">
+                <!--------------------------------------------overview heading ---------------------------------------------->
+                <h1>Overview</h1>
+
+                <div class="content_counter">
+                    <div class="con_details">
+                        <img src="images/Group 11.png" class="fac">
+                        <h4>Faculties</h4>
+
+                        <h2>2</h2>
+                    </div>
+                    <div class="con_details">
+                        <img src="images/dept.png" class="dept">
+                        <h4>Colleges</h4>
+
+                        <h2>1</h2>
+                    </div>
+
+                    <div class="con_details">
+                        <img src="images/Group 9.png" class="ad">
+                        <h4>College admins</h4>
+
+                        <h2>1</h2>
+                    </div>
+
+                    <div class="con_details">
+                        <img src="images/noti.png" class="notify">
+                        <h4>Notifications</h4>
+
+                        <h2>3</h2>
+                    </div>
+                </div>
+
+
+
+
+                <div class="instruction">
+
+                    <div class="ins_head">
+
+                        <img src="images/Group 10.png" class="ins_pic">
+
+
+                        <h5>Activities of Super admin</h5>
+
+
+                        <p>You can add and edit faculty which are under the Assam Agricultural University.</p>
+
+                        <p>You can add and edit colleges which are under the faculty you have added.</p>
+
+                        <p>You can add , edit and delete college Admins which are under colleges you have added.</p>
+
+
+                        <p>You can send notification to college admins of different colleges which you have added.</p>
+
+
+
+                        <p>Lastly , You can see your previous activities.</p>
+                    </div>
+                </div>
+
+
+
+
 
 
 

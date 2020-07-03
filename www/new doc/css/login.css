@@ -166,8 +166,19 @@
 
 
 .main_form .remember-me{
-    width: 40%;
-    margin:6px 85px;
+    width: 65%;
+    margin:6px auto 6px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_form .remember-me a{
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.for_pass{
+    display: none;
 }
 
 

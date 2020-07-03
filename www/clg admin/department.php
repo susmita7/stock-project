@@ -10,7 +10,7 @@
     <!--------------------------------------------------css link----------------------------------------------------------->
     <link rel="stylesheet" type="text/css" href="css/department.css">
     <link rel="stylesheet" type="text/css" href="css/main_dashboard.css">
-
+    <link rel="stylesheet" type="text/css" href="css/media_dashboard.css">
     <!--------------------------------------------------bootstrap css link------------------------------------------------------>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!--------------------------------------------------font asesome link----------------------------------------------------------->
@@ -21,9 +21,9 @@
 
 <body onload="renderDate()">
     <div class="wrapper">
-        <div class="side_menu">
-            <div class="side_menu_close_btn" onclick="side_menu_close()">
-                <a><i class="fas fa-window-close"></i></a>
+        <div class="side_menu" id="menu">
+            <div class="side_menu_close_btn">
+                <a><i class="fas fa-window-close" onclick="side_menu_open()"></i></a>
             </div>
             <div class="admin con_tabs">
                 <!-------------------------------------------- profile ---------------------------------->
@@ -60,12 +60,13 @@
         </div>
         <!-------------------------------------------- top nav ---------------------------------->
         <div class="top_content">
-            <div class="hamburger" onclick="side_menu_open()">
-                <a><i class="fas fa-bars"></i></a>
-            </div>
+
             <!---------------------------------------college name heading ---------------------------------->
             <div class="top_nav">
                 <div class="top_nav_heading">
+                    <div class="hamburger">
+                        <a><i class="fas fa-bars" onclick="side_menu_open()"></i></a>
+                    </div>
                     <h3>College of Agriculture</h3>
                 </div>
 
@@ -241,7 +242,7 @@
                         </div>
                         <!--------------------------------------form ---------------------------------->
                         <div class="main_add_clg">
-                            <form action="" method="POST" id="form2" >
+                            <form action="" method="POST" id="form2">
                                 <p>Department Name</p>
                                 <input type="text" class="form-control form-control-sm" id="dept_up" required>
 
@@ -271,15 +272,16 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
     <!---------------------------------------------------------ajax link----------------------------------------------------->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <!-----------------------------------------------------------------js links---------------------------------------------->
-    <script src="js/department.js"></script>
-    <script src="js/dashboard.js"></script>
+
     <!---------------------------------------------------- sweet-alert link ------------------------------------------------->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!--------------------------------------------------bootstrap js link---------------------------------------------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-----------------------------------------------------------------js links---------------------------------------------->
+    <script src="js/department.js"></script>
+    <script src="js/dashboard.js"></script>
 
     <!------------------------------------------------------------- searching ----------------------------------------------->
 

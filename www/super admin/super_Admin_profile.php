@@ -8,9 +8,9 @@
     <title>Dashboard | Super admin profile</title>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <!--------------------------------------------------css link----------------------------------------------------------->
-    <link rel="stylesheet" type="text/css" href="css/super_admin_profile.css">
+    <link rel="stylesheet" type="text/css" href="css/Profile.css">
     <link rel="stylesheet" type="text/css" href="css/main_dashboard.css">
-
+    <link rel="stylesheet" type="text/css" href="css/media_dashboard.css">
     <!--------------------------------------------------bootstrap css link----------------------------------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!--------------------------------------------------font asesome link----------------------------------------------------------->
@@ -30,8 +30,8 @@
 <body onload="renderDate()">
 
     <div class="wrapper">
-        <div class="side_menu">
-            <div class="side_menu_close_btn" onclick="side_menu_close()">
+        <div class="side_menu" id="menu">
+            <div class="side_menu_close_btn" onclick="side_menu_open()">
                 <a><i class="fas fa-window-close"></i></a>
             </div>
             <!---------------------------------------- profile ------------------------------------>
@@ -44,7 +44,7 @@
             <div class="tabs">
                 <div class="con_tabs">
                     <a href="super_admin_dashboard_home.php" class="con_tabs_links"><i class="fas fa-home"></i>
-                        Home</a>
+                        Dashboard</a>
                     <a href="faculty.php" class="con_tabs_links"><i class="fas fa-user-friends"></i> Faculties</a>
                     <a href="college.php" class="con_tabs_links"><i class="fas fa-book"></i>&nbsp Colleges</a>
 
@@ -68,11 +68,12 @@
         </div>
         <!---------------------------------------- top-nav ------------------------------------>
         <div class="top_content">
-            <div class="hamburger" onclick="side_menu_open()">
-                <a><i class="fas fa-bars"></i></a>
-            </div>
+
             <div class="top_nav">
                 <div class="top_nav_heading">
+                    <div class="hamburger" onclick="side_menu_open()">
+                        <a><i class="fas fa-bars"></i></a>
+                    </div>
                     <h3>Assam Agriculture University</h3>
                 </div>
 
@@ -152,31 +153,65 @@
 
             <div class="content">
 
-                <!------------------------------------- profile details ------------------------------->
+                <!------------------------------------- profile details -------------------------------
 
-                <div class="main_profile">
+                 <div class="main_profile">
                     <div class="heading_pro">
                         <h1>YOUR PROFILE</h1>
                         <img src="images/face.jpg" class="pro_pic">
                     </div>
 
-                    <!---------------------------------------- details ------------------------------------>
+                    -------------------------------------- details ------------------------------------
                     <div class="details">
                         <div class="left_content">
                             <h3>Name :</h3>
                             <h3>Email ID :</h3>
+                            <h3>Mobile no. :</h3>
                         </div>
                         <div class="right_content">
-                            <h3>Kaushik Kamal Bordoloi</h3>
-                            <h3>superadmin@gmail.com</h3>
+                            <h3>Kaushik Bordoloi</h3>
+                            <h3>superadmin1234567@gmail.com</h3>
+                            <h3>9087654321</h3>
                         </div>
                     </div>
 
-                    <!------------------------------- update profile and reset password butto------------------------------>
+                    ---------------------------- update profile and reset password butto------------------------------
 
                     <div class="up_re_btn">
                         <a id="up_pro" type="button" onclick="overlay_update()">Edit Profile</a>
                         <a id="re_pass" type="button" onclick="overlay_pass()">Reset Password</a>
+                    </div>
+                </div> -->
+
+                <div class="base_profile">
+
+                    <div class="left_side">
+                        <div class="heading">
+                            <h3>YOUR PROFILE</h3>
+                            <div class="pic">
+                                <img src="images/face.jpg">
+                            </div>
+
+                        </div>
+                        <div class="icons">
+                                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/?hl=en"  target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://twitter.com/explore"  target="_blank"><i class="fab fa-twitter"></i></a>
+
+                            </div>
+                    </div>
+                    <div class="middle"></div>
+                    <div class="right_side">
+                        <div class="info">
+                            <h4>Name : Priya Subhalakhmi Hazarika</h4>
+                            <h4>Email ID : susmitasharma3751@gmail.com</h4>
+                            <!-- <h4>Phone No. :908123456</h4> -->
+                        </div>
+
+                        <div class="up_re_btn">
+                            <a id="up_pro" type="button" onclick="overlay_update()">Edit Profile</a>
+                            <a id="re_pass" type="button" onclick="overlay_pass()">Reset Password</a>
+                        </div>
                     </div>
                 </div>
 

@@ -49,33 +49,13 @@ showTime();
 
 
 
-// function side_menu_open() {
-//     if (window.matchMedia("(max-width: 600px)").matches) {
-//         gsap.to('.side_menu', {
-//             width: '60%',
-//             display: 'block'
-//         })
-//         gsap.to(".admin" ,{display:'block'})
-//         gsap.to(".tabs" ,{display:'block'})
-//         gsap.to(".side_menu_footer" ,{display:'block'})
-//     }
-// }
+function side_menu_open(){
+    var menu = document.getElementById("menu");
+    menu.classList.toggle("open");
+}
 
-// function side_menu_close() {
-//     if (window.matchMedia("(max-width: 600px)").matches) {
-        
-//         gsap.to(".admin" ,{display:'none'})
-//         gsap.to(".tabs" ,{display:'none'})
-//         gsap.to(".side_menu_footer" ,{display:'none', onComplete:function(){
-//             gsap.to('.side_menu', {
-//                 width: '0%',
-//                 display: 'none'
-//             })
-//         }})
-        
-        
-//     }
-// }
+
+
 
 
 

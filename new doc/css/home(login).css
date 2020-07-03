@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: block;
+    overflow: hidden;
+}
+
+/***********************************************************************container-1***********************************************************/
+
+.container-1 {
+    height: 100vh;
+    width: 100%;
+}
+
+
+/*************************************************** containers under container-1 for 3-divs ***************************************************/
+
+.upper {
+    width: 100%;
+    height: 480px;
+    /* background-image: linear-gradient(-120deg, rgb(26, 35, 126), rgb(100, 181, 246)); */
+
+}
+
+.upper svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* .overlay {
+    position: absolute;
+    width: 100%;
+    height: 65vh;
+    background: rgba(0, 0, 0, 0.3);
+
+} */
+
+/* .lower {
+    width: 100%;
+    height: 35vh;
+    background: #EEEEEE;
+} */
+/***********************************************************************container-2***********************************************************/
+
+.container-2 {
+    position: absolute;
+    top: 0%;
+    background: transparent;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.stockpile-logo {
+    position: absolute;
+    top: 40px;
+
+}
+
+.stockpile-logo h1 {
+    width: 100%;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 300;
+    padding: 26px;
+}
+
+.stockpile-logo h3 {
+    width: 100%;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+/*************************************************** containers under container-2 for 3-divs ***************************************************/
+
+
+.middle {
+    background: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 185px
+}
+
+/*************************************************** div-1 and 2 and 3 with inner details and button *****************************************/
+
+
+
+/***********************************************************************div-1****************************************************************/
+
+
+/* .div-1 {
+    border-radius: 10px;
+    background: whitesmoke;
+    width: 245px;
+    height: 316px;
+    margin: 0px 250px;
+    box-shadow: 1px 2px 50px 0px rgba(77, 71, 71, 0.34);
+} */
+
+
+.header {
+    width: 265px;
+    height: 190px;
+}
+
+#pic {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 265px;
+    height: 190px;
+    opacity: 0.6;
+
+}
+
+
+
+.button {
+    background: whitesmoke;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-left: 220px;
+    box-shadow: 0 0 16px rgba(77, 71, 71, 0.34);
+
+
+}
+
+
+.button:hover {
+    color: white;
+    background: rgb(2, 136, 209);
+    box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+
+}
+
+
+#user-logo>i {
+
+    margin-left: 10px;
+    font-size: 25px;
+    line-height: 42.5px;
+    transition: 0.6s ease;
+}
+
+#user-logo:hover>i {
+    transform: scale(1.0);
+    color: aliceblue;
+}
+
+
+
+.fa-user-plus {
+    color: rgb(2, 136, 209);
+}
+
+
+
+/************************************************************details under container-2***********************************************************/
+
+
+.detail {
+    /* background: whitesmoke; */
+    margin-top: 22px;
+    margin-left: 13px;
+    width: 90%;
+    height: 75px;
+}
+
+.heading {
+    color: rgb(2, 136, 209);
+    font-weight: bold;
+    font-size: 19px;
+    margin-left: 6px;
+    
+}
+
+#para {
+    font-weight: 100;
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+
+/***********************************************************************div-2***********************************************************/
+
+.div-2 {
+
+    border-radius: 10px;
+    background: white;
+    width: 265px;
+    height: 325px;
+    margin: 0px 80px;
+    box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+}
+
+/***********************************************************************div-3***********************************************************/
+
+.div-3 {
+    border-radius: 10px;
+    background: white;
+    width: 265px;
+    height: 325px;
+    margin: 0px 80px;
+    box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+}
+
+/*********************************************************************** back buuton ***************************************************/
+
+
+.down {
+    position: absolute;
+    bottom: 0%;
+    left: 1%;
+}
+
+.back_btn {
+
+    padding: 0;
+    text-align: center;
+}
+
+
+.back {
+
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50px;
+    overflow: hidden;
+    background: rgb(2, 136, 209);
+    height: 42px;
+
+}
+
+
+.back a {
+    display: block;
+    min-width: 38px;
+    max-width: 2em;
+    /* height: 1.8em; */
+    white-space: nowrap;
+    line-height: 44px;
+    transition: .8s;
+    text-decoration: none;
+    font-size: 21px;
+    color: #fff;
+
+}
+
+.back a i {
+    text-align: center;
+    margin-left: 11px;
+    margin-right: 9px;
+    padding-right: 5px;
+}
+
+.back:hover a {
+    padding-right: 20px;
+    max-width: 200px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/***********************************************************************container-3 used for overlay form***********************************************************/
+
+.container-3 {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0%;
+    top: 0%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 5;
+    display: none;
+    opacity: 0;
+
+}
+
+
+#cross {
+    z-index: 6;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+}
+
+#cross i {
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+
+/***************************************************form full div**********************************************************************/
+
+#form {
+    background-color: white;
+    height: 500px;
+    margin-top: 130px;
+    border-radius: 5px;
+    padding: 0px 0px;
+}
+
+/***********************************************login-heading background****************************************************************************/
+
+#heading {
+    height: 130px;
+    background: rgb(2, 136, 209);
+    border-radius: 5px;
+
+}
+
+
+/****************************************************login heading****************************************************************************/
+
+.heading-login {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 200px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+/*****************************************************user-logo*************************************************************************/
+
+
+.logo {
+    background-image: linear-gradient(-120deg, rgb(26, 35, 126), rgb(100, 181, 246));
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 7px solid white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-left: 190px;
+}
+
+#login-form-user-logo {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+.fa-user {
+    color: #EEEEEE
+}
+
+/****************************************************** main form with lable*****************************************************************/
+
+.main-form {
+    margin-top: 50px;
+}
+
+.col-9>p {
+    margin-top: 7px;
+    font-weight: 100px;
+    color: rgb(2, 136, 209);
+    font-size: 15px;
+    margin-left: 45px;
+    margin-bottom: 8px;
+}
+
+#text-field {
+    margin-bottom: 12px;
+    margin-left: 45px;
+}
+
+
+
+/***********************************************for_pass and for_pass_hover**************************************************************************/
+
+
+
+
+
+.R_M {
+
+    width: 150px;
+    height: 20px;
+    margin-left: 45px;
+}
+
+.R_M p{
+    font-size: 14px;
+    color: rgb(2, 136, 209);
+}
+
+.check_box {
+    margin-top: 2px;
+}
+
+
+
+/***********************************************submit-button**************************************************************************/
+
+.main-form .log-btn {
+    cursor: pointer;
+    margin-left: 45px;
+    margin-top: 25px;
+    height: 32px;
+    width: 74%;
+    display: block;
+    transition: 0.2s ease;
+    border-radius: 3px;
+    color: white;
+    font-size: 18px;
+    background: rgb(2, 136, 209);
+    border: 1.5px solid rgb(2, 136, 209);
+}
+
+/***********************************************submit-button hover**************************************************************************/
+
+.main-form .log-btn:hover {
+    background: transparent;
+    color: rgb(2, 136, 209);
+}
+
+
+/***********************************************************************container-4 used for overlay form***********************************************************/
+
+.container-4 {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0%;
+    top: 0%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 5;
+    display: none;
+    opacity: 0;
+
+}

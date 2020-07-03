@@ -13,7 +13,7 @@
     <!--------------------------------------------------css link----------------------------------------------------------->
     <link rel="stylesheet" type="text/css" href="css/recurring_issue.css">
     <link rel="stylesheet" type="text/css" href="css/main_dashboard.css">
-
+    <link rel="stylesheet" type="text/css" href="css/media_dashboard.css">
     <!--------------------------------------------------bootstrap css link----------------------------------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!--------------------------------------------------font asesome link----------------------------------------------------------->
@@ -24,8 +24,8 @@
 
 <body onload="renderDate()">
     <div class="wrapper">
-        <div class="side_menu">
-            <div class="side_menu_close_btn" onclick="side_menu_close()">
+        <div class="side_menu" id="menu">
+            <div class="side_menu_close_btn" onclick="side_menu_open()">
                 <a><i class="fas fa-window-close"></i></a>
             </div>
             <!--------------------------------------------profile------------------------------------------->
@@ -57,13 +57,12 @@
                         <a href="non_recurring_issue.php">Non-Recurring</a>
                     </div>
 
-                    <a href="#" class="con_tabs_links"><i class="fas fa-toolbox"></i>
+                    <a href="damage.php" class="con_tabs_links"><i class="fas fa-toolbox"></i>
                         Repair</a>
-                    <a href="#" class="con_tabs_links"><span class="counter_side_noti">
+                    <a href="order.php" class="con_tabs_links"><i class="fas fa-copy"></i> Orders</a>
+                    <a href="notification.php" class="con_tabs_links"><span class="counter_side_noti">
                             <p>2</p>
                         </span><i class="fas fa-bell"></i> Notifications</a>
-
-                    <a href="#" class="con_tabs_links"><i class="fas fa-copy"></i> Orders</a>
                 </div>
             </div>
             <!---------------------------------------------------- copyright------------------------------------------->
@@ -78,12 +77,13 @@
         </div>
         <!-------------------------------------------top nav------------------------------------------->
         <div class="top_content">
-            <div class="hamburger" onclick="side_menu_open()">
-                <a><i class="fas fa-bars"></i></a>
-            </div>
+
             <div class="top_nav">
                 <!--------------------------------------heading------------------------------------------>
                 <div class="top_nav_heading">
+                    <div class="hamburger" onclick="side_menu_open()">
+                        <a><i class="fas fa-bars"></i></a>
+                    </div>
                     <h3>Agriculture Statistics</h3>
                 </div>
 
@@ -177,12 +177,34 @@
                             </div>
                         </div>
                     </div>
-                    <!--------------------------------------------------notification------------------------------------------->
+                    <!-------------------------------------------notification ---------------------------------->
                     <div class="noti">
                         <span class="counter">
                             <p>2</p>
                         </span>
-                        <i class="fas fa-bell" class="noti_bell"></i>
+                        <i class="fas fa-bell" class="noti_bell" onclick="show_notification()"></i>
+
+                        <div class="drop_noti" id="notification">
+                            <div class="noti_heading_btn">
+                                <h6>Notifications</h6>
+                                <a type="button">Read all</a>
+                            </div>
+
+                            <div class="notification">
+                                <div class="alert_icon">
+                                    <i class="noti_side_icon fa fa-user"></i>
+                                    <h3>Greeting</h3>
+                                </div>
+                                <div class="noti_content">
+                                    <h5>From Agricultural satistics</h5>
+                                    <p>order for recurring stock of agriculture statistics</p>
+                                    <div class="alert-time">6s ago</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <a href="">View all notifications</a>
+
+                        </div>
                     </div>
                     <!------------------------------------------------logout----------------------------------------->
                     <div class="logout">
@@ -196,6 +218,36 @@
             <!---------------------------------------------------content div------------------------------------------->
             <div class="content">
 
+
+                            <!----------------------------------------red alert----------------------------------->
+                            <div class="warning_red war_open">
+                    <div class="icon">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+
+                    <div class="msg">
+                        <p>Warning : Less Stock,Please check! <p>
+
+                    </div>
+                    <div class="cancel">
+                        <i class="fas fa-times-circle" id="close"></i>
+                    </div>
+                </div>
+                <!----------------------------------------yellow alert----------------------------------->
+
+                <div class="warning_yellow war_open">
+                    <div class="icon">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+
+                    <div class="msg">
+                        <p>Warning : Less Stock,Please check! <p>
+
+                    </div>
+                    <div class="cancel">
+                        <i class="fas fa-times-circle" id="close"></i>
+                    </div>
+                </div>
 
 
                 <div class="college">
@@ -230,7 +282,6 @@
                                     <th scope="col" class="align-middle">Department</th>
                                     <th scope="col" class="align-middle">Contact No</th>
                                     <th scope="col" class="align-middle">Purpose</th>
-                                    <th scope="col" class="align-middle">Action</th>
                                 </tr>
                             </thead>
                             <tbody id="myTable">
@@ -244,7 +295,6 @@
                                     <td class="align-middle">statices</td>
                                     <td class="align-middle">9087654321</td>
                                     <td class="align-middle">for office use only</td>
-                                    <td class="align-middle"><a id="del_ad" type="button">Delete</a>
                                     </td>
                                 </tr>
 
@@ -384,6 +434,69 @@
                 });
             });
         });
+    </script>
+
+
+    <!-----------------------------------alert-------------------------------------->
+
+    <script>
+
+
+        //warning
+        
+        $(document).ready(function () {
+            showWarning();
+        });
+
+        setInterval(function () {
+            showWarning();
+        }, 10000);
+
+
+        function showWarning() {
+            var stock = 0
+
+            if (stock == 5)
+
+                showYellowWarning();
+            else
+                showRedWarning();
+        }
+
+        //yellow warning
+
+        function showYellowWarning() {
+
+            $(".warning_yellow").css('display', 'flex');
+
+            setTimeout(function () {
+                $(".warning_yellow").fadeOut(1000);
+            }, 5000);
+
+            $("#close").click(function () {
+                $(".warning_yellow").css('display', 'none');
+            });
+
+        }
+
+
+        //warning_red
+
+
+        function showRedWarning() {
+
+            $(".warning_red").css('display', 'flex');
+
+            setTimeout(function () {
+                $(".warning_red").fadeOut(1000);
+            }, 5000);
+
+            $("#close").click(function () {
+                $(".warning_red").css('display', 'none');
+            });
+
+        }
+
     </script>
 </body>
 

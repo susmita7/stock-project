@@ -10,7 +10,7 @@
     <!--------------------------------------------------css link----------------------------------------------------------->
     <link rel="stylesheet" type="text/css" href="css/firms.css">
     <link rel="stylesheet" type="text/css" href="css/main_dashboard.css">
-
+    <link rel="stylesheet" type="text/css" href="css/media_dashboard.css">
     <!--------------------------------------------------bootstrap css link------------------------------------------------------>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!--------------------------------------------------font asesome link----------------------------------------------------------->
@@ -21,8 +21,8 @@
 
 <body onload="renderDate()">
     <div class="wrapper">
-        <div class="side_menu">
-            <div class="side_menu_close_btn" onclick="side_menu_close()">
+        <div class="side_menu" id="menu">
+            <div class="side_menu_close_btn" onclick="side_menu_open()">
                 <a><i class="fas fa-window-close"></i></a>
             </div>
             <div class="admin con_tabs">
@@ -60,12 +60,14 @@
         </div>
         <!-------------------------------------------- top nav ---------------------------------->
         <div class="top_content">
-            <div class="hamburger" onclick="side_menu_open()">
-                <a><i class="fas fa-bars"></i></a>
-            </div>
+
             <!---------------------------------------college name heading ---------------------------------->
             <div class="top_nav">
+
                 <div class="top_nav_heading">
+                    <div class="hamburger">
+                        <a><i class="fas fa-bars" onclick="side_menu_open()"></i></a>
+                    </div>
                     <h3>College of Agriculture</h3>
                 </div>
 
@@ -176,7 +178,7 @@
                                     <th class="align-middle" scope="col">Email Id</th>
                                     <th class="align-middle" scope="col">Phone No</th>
                                     <th class="align-middle" scope="col">Address</th>
-                                    <th class="align-middle" scope="col"  colspan="2">Action</th>
+                                    <th class="align-middle" scope="col" colspan="3">Action</th>
                                 </tr>
                             </thead>
                             <tbody id="myTable">
@@ -187,24 +189,28 @@
                                     <td class="align-middle"><?php echo "susmita" ?></td>
                                     <td class="align-middle"><?php echo "susmita" ?></td>
                                     <td class="align-middle"><?php echo "susmita" ?></td>
+                                    <td class="align-middle"><a id="email" type="button" onclick="overlay_email()">Send
+                                            mail</a></td>
                                     <td class="align-middle"><a id="up_clg" class="editbtn" onclick="overlay_update()"
                                             type="button">Update</a>
                                     </td>
                                     <td class="align-middle"><a id="del_ad" type="button">Delete</a></td>
-                                    </td>
+
                                 </tr>
                                 <tr>
-                                <td class="align-middle"><?php echo "1" ?></td>
+                                    <td class="align-middle"><?php echo "1" ?></td>
                                     <td class="align-middle"><?php echo "susmita" ?></td>
                                     <td class="align-middle"><?php echo "susmita" ?></td>
                                     <td class="align-middle"><?php echo "susmita" ?></td>
                                     <td class="align-middle"><?php echo "susmita" ?></td>
                                     <td class="align-middle"><?php echo "susmita" ?></td>
+                                    <td class="align-middle"><a id="email" type="button" onclick="overlay_email()">Send
+                                            mail</a></td>
                                     <td class="align-middle"><a id="up_clg" class="editbtn" onclick="overlay_update()"
                                             type="button">Update</a>
                                     </td>
                                     <td class="align-middle"><a id="del_ad" type="button">Delete</a></td>
-                                    </td>
+
                                 </tr>
                             </tbody>
                         </table>
@@ -251,7 +257,7 @@
                 <!------------------------------------------overlay update ---------------------------------->
 
                 <div class="overlay_update" id="overlay-update">
-                    <a id="cross" onclick="reverse_update()"><i class="fas fa-times-circle"></i></a>
+                    <a id="cross" type="button" onclick="reverse_update()"><i class="fas fa-times-circle"></i></a>
 
                     <div class="add_clg_base_div">
                         <div class="heading_for_add_clg">
@@ -259,8 +265,8 @@
                         </div>
                         <!--------------------------------------form ---------------------------------->
                         <div class="main_add_clg">
-                            <form action="" method="POST" id="form2" >
-                            <p>Firm Name</p>
+                            <form action="" method="POST" id="form2">
+                                <p>Firm Name</p>
                                 <input type="text" class="form-control form-control-sm" id="" required>
 
                                 <p>Owner Name</p>
@@ -275,6 +281,52 @@
                                 <p>Address</p>
                                 <input type="text" class="form-control form-control-sm" id="" required>
                                 <div class="add_clg_btn"><input type="submit" value="Save"></div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!------------------------------------------overlay email---------------------------------->
+
+                <div class="overlay_update" id="overlay-email">
+                    <a id="cross" type="button" onclick="reverse_email()"><i class="fas fa-times-circle"></i></a>
+
+                    <div class="send_email_base_div">
+                        <div class="heading_for_add_clg">
+                            <h1>Send Mail</h1>
+                        </div>
+                        <!--------------------------------------form ---------------------------------->
+                        <div class="main_add_clg">
+                            <form action="" method="POST" id="form2">
+                                <p>From</p>
+                                <input type="text" class="form-control form-control-sm" value="stockpile52@gmail.com"
+                                    readonly>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <p>Firm Name</p>
+                                        <input type="text" class="form-control form-control-sm" readonly>
+                                    </div>
+                                    <div class="col">
+                                        <p>Owner Name</p>
+                                        <input type="text" class="form-control form-control-sm" readonly>
+                                    </div>
+                                </div>
+
+                                <p>To</p>
+                                <input type="email" class="form-control form-control-sm" id="" readonly>
+
+                                <p>Subject</p>
+                                <input type="text" class="form-control form-control-sm" id="" required>
+
+                                <p>Compose email</p>
+                                <textarea class="form-control form-control-sm" col="2" required></textarea>
+
+
+                                <div class="add_clg_btn"><input type="submit" value="Send"></div>
 
                             </form>
 

@@ -11,7 +11,7 @@
     <!--------------------------------------------------css link----------------------------------------------------------->
     <link rel="stylesheet" type="text/css" href="css/damage.css">
     <link rel="stylesheet" type="text/css" href="css/main_dashboard.css">
-
+    <link rel="stylesheet" type="text/css" href="css/media_dashboard.css">
     <!--------------------------------------------------bootstrap css link----------------------------------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!--------------------------------------------------font asesome link----------------------------------------------------------->
@@ -22,8 +22,8 @@
 
 <body onload="renderDate()">
     <div class="wrapper">
-        <div class="side_menu">
-            <div class="side_menu_close_btn" onclick="side_menu_close()">
+        <div class="side_menu" id="menu">
+            <div class="side_menu_close_btn" onclick="side_menu_open()">
                 <a><i class="fas fa-window-close"></i></a>
             </div>
             <!---------------------------------profile-------------------------------------->
@@ -43,7 +43,7 @@
                         <a href="stock_unit.php">Stock Unit</a>
                     </div>
 
-                    <p class="accordion con_tabs_links ac"><i class="fas fa-plus-square"></i> &nbspAdd
+                    <p class="accordion con_tabs_links"><i class="fas fa-plus-square"></i> &nbspAdd
                         Stock</p>
                     <div class="panel">
                         <a href="recurring_add.php">Recurring</a>
@@ -56,13 +56,14 @@
                         <a href="non_recurring_issue.php">Non-Recurring</a>
                     </div>
 
-                    <a href="damage.php" class="con_tabs_links"><i class="fas fa-toolbox"></i>
+                    <a href="damage.php" class="con_tabs_links ac"><i class="fas fa-toolbox"></i>
                         Repair</a>
-                    <a href="#" class="con_tabs_links"><span class="counter_side_noti">
+                    <a href="order.php" class="con_tabs_links"><i class="fas fa-copy"></i> Orders</a>
+                    <a href="notification.php" class="con_tabs_links"><span class="counter_side_noti">
                             <p>2</p>
                         </span><i class="fas fa-bell"></i> Notifications</a>
 
-                    <a href="#" class="con_tabs_links"><i class="fas fa-copy"></i> Orders</a>
+
                 </div>
             </div>
             <!---------------------------------------------------- copyright------------------------------------------->
@@ -76,12 +77,13 @@
 
         </div>
         <div class="top_content">
-            <div class="hamburger" onclick="side_menu_open()">
-                <a><i class="fas fa-bars"></i></a>
-            </div>
+
             <!----------------------------------heading-------------------------------------->
             <div class="top_nav">
                 <div class="top_nav_heading">
+                    <div class="hamburger" onclick="side_menu_open()">
+                        <a><i class="fas fa-bars"></i></a>
+                    </div>
                     <h3>Agriculture Statistics</h3>
                 </div>
 
@@ -201,13 +203,16 @@
                             <h1>Damage stock records</h1>
                         </div>
                         <div class="item_unit_btn">
-                            <!---------------------------------search---------------------------------------->
+                            <!----------------------------------------search---------------------------------->
                             <div class="search_bar">
                                 <input type="text" placeholder="search" id="search">
                                 <div class="icon"> <i class="fas fa-search"></i></div>
                             </div>
+                            <a id="add_item" href="non_recurring_issue.php">Issue Stock</a>
                         </div>
                     </div>
+
+
                     <!----------------------------------table--------------------------------------->
                     <div class="table-responsive">
                         <table class="table table-striped table-bordered">
@@ -252,7 +257,6 @@
     <!-------------------------------------------------js link ------------------------------------------------->
     <script src="js/dashboard.js"></script>
     <script src="js/calculator.js"></script>
-    <script src="js/non_recurring_add.js"></script>
     <!---------------------------------------------------- sweet-alert link ------------------------------------------------->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!--------------------------------------------------bootstrap js link---------------------------------------------------->
@@ -269,6 +273,15 @@
                 $("#myTable tr").filter(function () {
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 });
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".fa-search").click(function () {
+                $(".icon").toggleClass("show_search");
+                $("input[type='text']").toggleClass("show_search")
             });
         });
     </script>

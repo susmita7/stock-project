@@ -201,9 +201,9 @@
     }
 
 
-    .main_form .remember-me {
-        width: 40%;
-        margin: 6px 72px;
+    .main_form .remember-me{
+        width: 65%;
+        margin:6px auto 6px auto;
     }
 
     .container-check {
@@ -375,9 +375,9 @@
 
     /***********************************************for_pass and for_pass_hover**************************************************************************/
 
-    .main_form .remember-me {
-        width: 40%;
-        margin: 6px 66px;
+    .main_form .remember-me{
+        width: 65%;
+        margin:6px auto 6px auto;
     }
 
     /***********************************************login button for login form**************************************************************************/
@@ -491,6 +491,19 @@
         transition: 0.6s ease;
     }
 
+
+    .container-2 {
+        position: absolute;
+        top: 0%;
+        background: transparent;
+        height: 0vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
     /***********************************************************************div-2***********************************************************/
 
     .div-2 {
@@ -555,7 +568,6 @@
 
     .input_box input {
         font-size: 14px;
-        ;
     }
 
 
@@ -564,12 +576,10 @@
 
 
 
-
-    .main_form .remember-me {
-        width: 60%;
-        margin: 6px 50px;
+    .main_form .remember-me{
+        width: 65%;
+        margin:6px auto 6px auto;
     }
-
 
     .container-check {
         font-size: 12px;

@@ -10,7 +10,7 @@
     <!--------------------------------------------------css link----------------------------------------------------------->
     <link rel="stylesheet" type="text/css" href="css/clg_admin.css">
     <link rel="stylesheet" type="text/css" href="css/main_dashboard.css">
-
+    <link rel="stylesheet" type="text/css" href="css/media_dashboard.css">
     <!--------------------------------------------------bootstrap css link----------------------------------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
@@ -24,8 +24,8 @@
 <body onload="renderDate()">
 
     <div class="wrapper">
-        <div class="side_menu">
-            <div class="side_menu_close_btn" onclick="side_menu_close()">
+        <div class="side_menu" id="menu">
+            <div class="side_menu_close_btn" onclick="side_menu_open()">
                 <a><i class="fas fa-window-close"></i></a>
             </div>
 
@@ -68,11 +68,12 @@
         <!------------------------------------- top nav ----------------------------->
 
         <div class="top_content">
-            <div class="hamburger" onclick="side_menu_open()">
-                <a><i class="fas fa-bars"></i></a>
-            </div>
+
             <div class="top_nav">
                 <div class="top_nav_heading">
+                    <div class="hamburger" onclick="side_menu_open()">
+                        <a><i class="fas fa-bars"></i></a>
+                    </div>
                     <h3>Assam Agriculture University</h3>
                 </div>
 
@@ -180,7 +181,7 @@
                         <table class="table table-striped table-bordered">
                             <thead>
                                 <tr>
-                                <th scope="col" class="align-middle">Profile</th>
+                                    <th scope="col" class="align-middle">Profile</th>
                                     <th scope="col" class="align-middle">Admin's First Name</th>
                                     <th scope="col" class="align-middle">Admin's Last Name</th>
                                     <th scope="col" class="align-middle">Admin's Email</th>
@@ -191,7 +192,7 @@
                             </thead>
                             <tbody id="myTable">
                                 <tr>
-                                <td class="align-middle"><img class=" table_img" src="images/face.jpg"></td>
+                                    <td class="align-middle"><img class=" table_img" src="images/face.jpg"></td>
                                     <td class="align-middle"><?php echo "college" ?></td>
                                     <td class="align-middle"><?php echo "admin" ?></td>
                                     <td class="align-middle"><?php echo "clgadmin@gmail.com" ?></td>
@@ -204,7 +205,7 @@
                                 </tr>
 
                                 <tr>
-                                <td class="align-middle"><img class=" table_img" src="images/face.jpg"></td>
+                                    <td class="align-middle"><img class=" table_img" src="images/face.jpg"></td>
                                     <td class="align-middle"><?php echo "college" ?></td>
                                     <td class="align-middle"><?php echo "admin" ?></td>
                                     <td class="align-middle"><?php echo "admin@gmail.com" ?></td>

@@ -362,3 +362,253 @@
  .swal-text{
      text-align: center;
  }
+
+
+
+ /*********************************************media for 600********************************************/
+
+@media screen and (max-width:600px) {
+
+    .college {
+        width: 90%;
+        color: rgb(33, 33, 33);
+        margin: 30px auto 50px auto;
+    }
+
+
+    /****************************************top heading********************************************/
+
+    .heading_btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .item_unit_btn {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .search_bar {
+        position: relative;
+        width: 120px;
+        height: 20px;
+        border-radius: 3px;
+        margin-right: 10px;
+    }
+
+    .search_bar input[type="text"] {
+        border: .5px solid rgb(2, 136, 209);
+        padding: 0px 0px;
+        width: 0px;
+        height: 20px;
+        border-radius: 3px;
+        transition: all .3s ease;
+        float: right;
+        background: transparent;
+        font-size: 10px;
+    }
+
+    .search_bar .icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: transparent;
+        border: 1.5px solid rgb(2, 136, 209);
+        height: 100%;
+        width: 20px;
+        border-radius: 3px;
+        color: rgb(2, 136, 209);
+        transition: all 0.5s .2s ease;
+    }
+
+    .search_bar .icon i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        font-size: 10px;
+    }
+
+    .search_bar .icon.show_search {
+        background: rgb(2, 136, 209);
+        color: white;
+        transition: all .3s ease;
+    }
+
+    .search_bar input[type="text"].show_search {
+        width: 120px;
+        padding: 1px 5px;
+        transition: all 0.5s .2s ease;
+    }
+
+    .icon_heading {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+
+
+    .icon_heading i {
+        margin-right: 10px;
+        font-size: 11px;
+        color: rgb(2, 136, 209);
+    }
+
+    .college h1 {
+        text-align: center;
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin: 0px;
+        color: rgb(33, 33, 33);
+    }
+
+
+    .table {
+        margin-top: 25px;
+    }
+
+
+
+    /*********************************************************************table heading********************************************/
+    .table thead {
+        background: rgb(189, 189, 189);
+        color: rgb(33, 33, 33);
+        text-align: center;
+        font-size: 10px;
+    }
+
+    /*********************************************************************table row********************************************/
+
+    .table tr {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    #up_clg {
+        border: 1.5px solid rgb(56, 142, 60);
+        text-align: center;
+        text-decoration: none !important;
+        color: white;
+        background: rgb(56, 142, 60);
+        font-size: 10px;
+        padding: 0px 5px;
+        transition: .2s ease;
+        border-radius: 3px;
+    }
+
+    #add_unit {
+        border: 1.5px solid rgb(2, 136, 209);
+        text-align: center;
+        text-decoration: none !important;
+        color: white;
+        background: rgb(2, 136, 209);
+        font-size: 10px;
+        padding: 1px 5px;
+        transition: .2s ease;
+        border-radius: 3px;
+    }
+
+
+    #add_item {
+        border: 1.5px solid rgb(2, 136, 209);
+        text-align: center;
+        text-decoration: none !important;
+        color: white;
+        background: rgb(2, 136, 209);
+        font-size: 10px;
+        padding: 1px 5px;
+        transition: .2s ease;
+        border-radius: 3px;
+        margin-right: 10px;
+    }
+
+    #cross {
+        z-index: 6;
+        position: absolute;
+        top: 30px;
+        right: 35px;
+    }
+
+    #cross i {
+        font-size: 25px;
+        color: whitesmoke;
+    }
+
+
+        /*****************************************************overlay for add college********************************************/
+
+
+        .add_clg_base_div {
+            margin: 90px auto 0px auto;
+            width: 300px;
+            height: 530px;
+            background: white;
+            border-radius: 2px;
+        }
+    
+    
+        /***************************************************heading for add college***********************************/
+    
+        .heading_for_add_clg {
+            height: 45px;
+            background: rgb(2, 136, 209);
+            text-align: center;
+            border-radius: 2px;
+            letter-spacing: 2px;
+        }
+    
+        .heading_for_add_clg h1 {
+            color: white;
+            font-weight: 100;
+            font-size: 16px;
+            padding-top: 9px;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 0px;
+        }
+    
+        /************************************************add college form base div**********************************************/
+    
+    
+        .main_add_clg {
+            width: 100%;
+        }
+    
+        /************************************************form for add college*****************************************************/
+    
+        .main_add_clg form {
+            width: 75%;
+            margin: 20px auto 0px auto;
+        }
+    
+        .main_add_clg p {
+            margin: 10px 0px 8px 0px;
+            color: rgb(33, 33, 33);
+            font-size: 13px;
+        }
+    
+        /************************************************add clg button -overlay page*****************************************************/
+    
+        .add_clg_btn {
+            margin: 30px auto 0px auto;
+        }
+    
+        .main_add_clg input[type='submit'] {
+    
+            color: white;
+            background: rgb(2, 136, 209);
+            border: 1.5px solid rgb(2, 136, 209);
+            width: 100%;
+            font-size: 12px;
+            padding: 4px 0px;
+            border-radius: 3px;
+            transition: .2s ease;
+        }
+
+}

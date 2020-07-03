@@ -5,14 +5,16 @@ if (!isset($_SESSION['is_da_login'])){
     //keep on the page
 }else{   
     //redirect on home page
-    header("Location: ./department admin/home");
+    header("Location: ./departmentadmin/home");
+    die();
 }
 
 if (!isset($_SESSION['is_eu_login'])){
     //keep on the page
 }else{   
     //redirect on home page
-    header("Location: ./expert user/home");
+    header("Location: ./expertuser/home");
+    die();
 }  
 ?>
 <!DOCTYPE html>
@@ -176,16 +178,6 @@ if (!isset($_SESSION['is_eu_login'])){
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
     
     <!--------------------------------------------------gsap link----------------------------------------------------------->
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
@@ -250,7 +242,7 @@ if (!isset($_SESSION['is_eu_login'])){
                 if (get.icon=="error"){
                     swal.fire(""+get.title , ""+get.text ,""+get.icon);
                 }else if (get.icon=="success") {
-                    window.location.href = "dept_login";
+                    window.location.href = "department_login";
                 }
             }
         })

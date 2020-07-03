@@ -1,0 +1,595 @@
+/********************************************************************* complete base********************************************/
+
+.college {
+    width: 90%;
+    color: rgb(33, 33, 33);
+    margin: 60px auto 50px auto;
+}
+
+/*****************************************************************heading + add college div********************************************/
+
+.heading_add_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon_heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_heading i {
+    margin-right: 10px;
+    font-size: 22px;
+    color: rgb(2, 136, 209);
+}
+
+
+.item_unit_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 340px;
+}
+
+
+.search_bar {
+    position: relative;
+    width: 250px;
+    height: 31px;
+    border-radius: 3px;
+}
+
+.search_bar input[type="text"] {
+    border: .5px solid rgb(2, 136, 209);
+    padding: 0px 0px;
+    width: 0px;
+    height: 31px;
+    border-radius: 3px;
+    transition: all .3s ease;
+    float: right;
+    background: transparent;
+}
+
+.search_bar .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: 1.5px solid rgb(2, 136, 209);
+    height: 100%;
+    width: 40px;
+    border-radius: 3px;
+    color: rgb(2, 136, 209);
+    transition: all 0.5s .2s ease;
+}
+
+.search_bar .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+}
+
+.search_bar .icon.show_search {
+    background: rgb(2, 136, 209);
+    color: white;
+    transition: all .3s ease;
+}
+
+.search_bar input[type="text"].show_search {
+    width: 250px;
+    padding: 3px 8px;
+    transition: all 0.5s .2s ease;
+}
+
+
+/*********************************************************************top heading********************************************/
+
+.college h1 {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin: 0px;
+    color: rgb(33, 33, 33);
+}
+
+
+/***********************************************************delete college********************************************/
+
+#add_clg {
+    border: 1.5px solid rgb(2, 136, 209);
+    text-align: center;
+    text-decoration: none !important;
+    color: white;
+    background: rgb(2, 136, 209);
+    font-size: 14px;
+    padding: 3px 7px;
+    transition: .2s ease;
+    border-radius: 3px;
+}
+
+#add_clg:hover {
+    border-color: #1976D2;
+    background: #1976D2;
+}
+
+#del {
+    border: 1.5px solid rgb(229, 57, 53);
+    text-align: center;
+    text-decoration: none !important;
+    color: white;
+    background: rgb(229, 57, 53);
+    font-size: 12px;
+    padding: 3px 7px;
+    transition: .2s ease;
+    border-radius: 3px;
+}
+
+#del:hover {
+    border-color: #B71C1C;
+    background: #B71C1C;
+}
+
+
+.base_ac {
+    width: 90%;
+    margin: 20px auto 0px auto;
+    justify-content: center;
+    display: flex;
+    background: white;
+    box-shadow: 0px 0px 15px 4px rgba(238, 238, 238, 0.5);
+}
+
+
+.base_ac .suc_icon {
+    width: 7%;
+    background: rgb(2, 136, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.base_ac .suc_icon i {
+    font-size: 17px;
+    color: white;
+}
+
+
+.base_ac .ac {
+    width: 85%;
+    padding: 10px 30px;
+    background: white;
+}
+
+
+.base_ac .ac p {
+    font-size: 14px;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.base_ac .ac_del {
+    display: flex;
+    justify-content: center;
+    padding: 18px 18px;
+    width: 12%;
+    align-items: center;
+    background: #eeeeee;
+}
+
+.time_date {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.time_date i {
+    margin-right: 2px;
+    font-size: 10px;
+    color: rgb(2, 136, 209);
+}
+
+
+.time_date h4 {
+    margin-top: 6px;
+    font-size: 10px;
+    color: rgb(2, 136, 209);
+}
+
+/***********************************overlay-delete******************************************/
+
+
+.main_delete {
+    width: 400px;
+    height: 290px;
+    background: white;
+    border-radius: 10px;
+    margin: 220px auto 0px auto;
+}
+
+.main_delete .icon {
+    margin: 0px auto 0px auto;
+    width: 18%;
+}
+
+.main_delete i {
+    margin-top: 40px;
+    font-size: 65px;
+    color: rgb(229, 57, 53);
+}
+
+
+.main_delete h1 {
+    font-size: 30px;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    font-weight: 100;
+    margin-top: 25px;
+}
+
+
+.main_delete .del_btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: 35px auto 0px auto;
+}
+
+.main_delete .del_btn .okay {
+    display: block;
+    width: 33%;
+    text-align: center;
+    border: 1.5px solid rgb(229, 57, 53);
+    color: white;
+    background: rgb(229, 57, 53);
+    padding: 4px 13px;
+    transition: 0.2s ease;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.main_delete .del_btn .okay:hover {
+    background: white;
+    color: rgb(229, 57, 53);
+}
+
+.main_delete .del_btn .cancel {
+    display: block;
+    width: 33%;
+    text-align: center;
+    border: 1.5px solid rgb(229, 57, 53);
+    color: rgb(229, 57, 53);
+    background: white;
+    transition: 0.2s ease;
+    padding: 4px 13px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.main_delete .del_btn .cancel:hover {
+    background: rgb(229, 57, 53);
+    color: white;
+}
+
+/***************************************************************overlay update********************************************/
+
+
+.overlay_update {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .7);
+    z-index: 5;
+    display: none;
+    opacity: 0;
+
+}
+
+
+
+/**************************************************** sweet-alert **************************************/
+
+
+
+.swal-button {
+    padding: 7px 34px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background: rgb(2, 136, 209);
+    outline: none;
+    text-shadow: none;
+}
+
+.swal-button:not([disabled]):hover {
+    background-color: white;
+    color: rgb(2, 136, 209);
+}
+
+.swal-footer {
+    text-align: center;
+}
+
+.swal-modal {
+    background-color: white;
+    border-radius: 16px;
+    height: 320px;
+    width: 400px;
+}
+
+.swal-title {
+    text-align: center;
+}
+
+
+.swal-text {
+    text-align: center;
+}
+
+
+
+/*********************************************media for 600********************************************/
+
+@media screen and (max-width:600px) {
+
+    .college {
+        width: 90%;
+        color: rgb(33, 33, 33);
+        margin: 30px auto 50px auto;
+    }
+
+
+    /****************************************top heading********************************************/
+
+    .heading_add_btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .item_unit_btn {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .search_bar {
+        position: relative;
+        width: 120px;
+        height: 20px;
+        border-radius: 3px;
+        margin-right: 10px;
+    }
+
+    .search_bar input[type="text"] {
+        border: .5px solid rgb(2, 136, 209);
+        padding: 0px 0px;
+        width: 0px;
+        height: 20px;
+        border-radius: 3px;
+        transition: all .3s ease;
+        float: right;
+        background: transparent;
+        font-size: 10px;
+    }
+
+    .search_bar .icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: transparent;
+        border: 1.5px solid rgb(2, 136, 209);
+        height: 100%;
+        width: 20px;
+        border-radius: 3px;
+        color: rgb(2, 136, 209);
+        transition: all 0.5s .2s ease;
+    }
+
+    .search_bar .icon i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        font-size: 10px;
+    }
+
+    .search_bar .icon.show_search {
+        background: rgb(2, 136, 209);
+        color: white;
+        transition: all .3s ease;
+    }
+
+    .search_bar input[type="text"].show_search {
+        width: 120px;
+        padding: 1px 5px;
+        transition: all 0.5s .2s ease;
+    }
+
+    .icon_heading {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+
+
+    .icon_heading i {
+        margin-right: 10px;
+        font-size: 11px;
+        color: rgb(2, 136, 209);
+    }
+
+    .college h1 {
+        text-align: center;
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin: 0px;
+        color: rgb(33, 33, 33);
+    }
+
+    #del {
+        border: 1.5px solid rgb(229, 57, 53);
+        text-align: center;
+        text-decoration: none !important;
+        color: white;
+        background: rgb(229, 57, 53);
+        font-size: 10px;
+        padding: 3px 7px;
+        transition: .2s ease;
+        border-radius: 3px;
+    }
+
+    #add_clg {
+        border: 1.5px solid rgb(2, 136, 209);
+        text-align: center;
+        text-decoration: none !important;
+        color: white;
+        background: rgb(2, 136, 209);
+        font-size: 10px;
+        padding: 3px 7px;
+        transition: .2s ease;
+        border-radius: 3px;
+    }
+
+
+
+    #cross {
+        z-index: 6;
+        position: absolute;
+        top: 30px;
+        right: 35px;
+    }
+
+    #cross i {
+        font-size: 25px;
+        color: whitesmoke;
+    }
+
+    .time_date {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .base_ac .ac {
+        width: 100%;
+        padding: 10px 30px;
+        background: white;
+    }
+
+    .base_ac {
+        width: 90%;
+        margin: 20px auto 0px auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        box-shadow: 0px 0px 15px 4px rgba(238, 238, 238, 0.5);
+    }
+
+
+    .base_ac .suc_icon {
+        display: none;
+    }
+
+    .base_ac .ac p {
+        font-size: 12px;
+        margin: 0px;
+        padding-top: 10px;
+    }
+
+    .base_ac .ac_del {
+        display: flex;
+        justify-content: center;
+        padding: 14px 18px;
+        width: 100%;
+        align-items: center;
+        background: #eeeeee;
+    }
+
+
+
+
+    /***********************************overlay-delete******************************************/
+
+
+    .main_delete {
+        width: 300px;
+        height: 230px;
+        background: white;
+        border-radius: 10px;
+        margin: 220px auto 0px auto;
+    }
+
+    .main_delete .icon {
+        margin: 0px auto 0px auto;
+        width: 18%;
+    }
+
+    .main_delete i {
+        margin-top: 40px;
+        font-size: 50px;
+        color: rgb(229, 57, 53);
+    }
+
+
+    .main_delete h1 {
+        font-size: 18px;
+        color: rgb(33, 33, 33);
+        text-align: center;
+        font-weight: 100;
+        margin-top: 25px;
+    }
+
+
+    .main_delete .del_btn {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        margin: 35px auto 0px auto;
+    }
+
+    .main_delete .del_btn .okay {
+        display: block;
+        width: 26%;
+        text-align: center;
+        border: 1.5px solid rgb(229, 57, 53);
+        color: white;
+        background: rgb(229, 57, 53);
+        padding: 2px 8px;
+        transition: 0.2s ease;
+        border-radius: 5px;
+        font-size: 13px;
+    }
+
+    .main_delete .del_btn .cancel {
+        display: block;
+        width: 26%;
+        text-align: center;
+        border: 1.5px solid rgb(229, 57, 53);
+        color: rgb(229, 57, 53);
+        background: white;
+        transition: 0.2s ease;
+        padding: 2px 8px;
+        border-radius: 5px;
+        font-size: 13px;
+    }
+
+}

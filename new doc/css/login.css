@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/***********************************************base***************************************************/
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+/***********************************************svg***************************************************/
+
+.top_image_bg {
+    height: 480px;
+    width: 100%;
+}
+
+.top_image_bg svg {
+    width: 100%;
+    height: 100%;
+}
+
+/***********************************************heading and form ***************************************************/
+
+.heading_form {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+/***********************************************headings***************************************************/
+
+
+.heading_text {
+    background: transparent;
+    height: 300px;
+}
+
+/***********************************************h1 used in login form for super admin**********************************************/
+
+.heading_text h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 57px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+/***********************************************h2 used in login form for super admin**********************************************/
+
+
+.heading_text h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 51px;
+    padding-top: 45px;
+    padding-bottom: 20px;
+}
+
+/***********************************************small para**********************************************/
+
+.heading_text p {
+    color: white;
+    font-size: 20px;
+
+}
+
+/***********************************************login form base and heading**********************************************/
+
+.form_base {
+    background: white;
+    box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+    height: 535px;
+    width: 90%;
+    border-radius: 4px;
+}
+
+.form_base h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 200;
+    padding-top: 50px;
+    color: rgb(2, 136, 209);
+}
+
+
+
+
+
+
+/***********************************************main form with input box**************************************************************************/
+
+
+.main_form {
+    background: white;
+    height: 55%;
+
+
+}
+
+.input_box {
+    position: relative;
+    width: 65%;
+    margin: 40px auto 0px auto;
+    padding-bottom: 16px;
+}
+
+/***********************************************form input box**************************************************************************/
+
+
+.input_box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(2, 136, 209);
+    margin-bottom: 30x;
+    border: none;
+    border-bottom: 1.5px solid rgb(2, 136, 209);
+    outline: none;
+    background: transparent;
+}
+
+/***********************************************label for input**************************************************************************/
+
+
+.input_box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(2, 136, 209);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/**********************************************label focus**************************************************************************/
+
+
+.input_box input:focus~label,
+.input_box input:valid~label {
+    top: -18px;
+    left: 0;
+    color: black;
+    font-size: 12px;
+}
+
+
+/***********************************************for_pass and for_pass_hover**************************************************************************/
+
+
+
+.R_M {
+    padding: 0;
+    width: 150px;
+    height: 20px;
+    margin-top: 6px;
+    margin-left: 82px;
+}
+
+.R_M p {
+    font-size: 14px;
+    color: rgb(2, 136, 209);
+}
+
+
+
+
+/***********************************************login button for login form**************************************************************************/
+
+
+
+.log-btn {
+    cursor: pointer;
+    margin-left: 82px;
+    margin-top: 40px;
+    height: 38px;
+    width: 66%;
+    display: block;
+    transition: 0.2s ease;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background: rgb(2, 136, 209);
+    border: 1.5px solid rgb(2, 136, 209);
+}
+
+.log-btn:hover {
+    background: transparent;
+    border: 1.5px solid rgb(2, 136, 209);
+    color: rgb(2, 136, 209);
+}
+
+
+
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.copyright p {
+    color: rgb(2, 136, 209);
+    font-size: 13px;
+}
+
+
+
+/*********************************************************************** back buuton ***************************************************/
+
+
+.down {
+    position: absolute;
+    bottom: 0%;
+    left: 1%;
+    z-index: 20;
+}
+
+.back_btn {
+
+    padding: 0;
+    text-align: center;
+}
+
+
+.back {
+
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50px;
+    overflow: hidden;
+    background: rgb(2, 136, 209);
+    height: 42px;
+
+}
+
+
+.back a {
+    display: block;
+    min-width: 38px;
+    max-width: 2em;
+    white-space: nowrap;
+    line-height: 44px;
+    transition: .8s;
+    text-decoration: none;
+    font-size: 21px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.back a i {
+    text-align: center;
+    margin-left: 11px;
+    margin-right: 9px;
+    padding-right: 5px;
+}
+
+.back:hover a {
+    padding-right: 20px;
+    max-width: 200px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+

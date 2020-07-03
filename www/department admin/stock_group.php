@@ -10,7 +10,7 @@
     <!--------------------------------------------------css link----------------------------------------------------------->
     <link rel="stylesheet" type="text/css" href="css/stock_group.css">
     <link rel="stylesheet" type="text/css" href="css/main_dashboard.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/Mq_dashboard.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/media_dashboard.css">
 
     <!--------------------------------------------------bootstrap css link----------------------------------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -22,8 +22,8 @@
 
 <body onload="renderDate()">
     <div class="wrapper">
-        <div class="side_menu">
-            <div class="side_menu_close_btn" onclick="side_menu_close()">
+        <div class="side_menu" id="menu">
+            <div class="side_menu_close_btn" onclick="side_menu_open()">
                 <a><i class="fas fa-window-close"></i></a>
             </div>
 
@@ -60,16 +60,15 @@
                 </div>
                 <h5>All rights reserved,copyright&copy; STOCKPILE,2020</h5>
             </div>
-
         </div>
         <!---------------------------------------------------top nav ---------------------------------------------->
         <div class="top_content">
-            <div class="hamburger" onclick="side_menu_open()">
-                <a><i class="fas fa-bars"></i></a>
-            </div>
             <div class="top_nav">
                 <!---------------------------------------------------- heading ------------------------------------------>
                 <div class="top_nav_heading">
+                    <div class="hamburger" onclick="side_menu_open()">
+                        <a><i class="fas fa-bars"></i></a>
+                    </div>
                     <h3>Assam Agriculture University</h3>
                 </div>
 

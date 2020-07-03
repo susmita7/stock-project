@@ -15,7 +15,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 
 	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="css/stylee.css" />
+	<link type="text/css" rel="stylesheet" href="css/404.css" />
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,21 +27,19 @@
 </head>
 
 <body>
-
 	<div id="notfound">
 		<div class="notfound">
 			<div class="notfound-404">
 				<h1>404</h1>
 			</div>
 			<h2>Oops, The Page you are looking for can't be found!</h2>
-			<form class="notfound-search">
+			<!--<form class="notfound-search">
 				<input type="text" placeholder="Search...">
 				<button type="button">Search</button>
-			</form>
-			<a href="../"><span class="arrow"></span>Return To Homepage</a>
+			</form>-->
+			<a href="./"><span class="arrow"></span>Return To Homepage</a>
 		</div>
 	</div>
-
 </body>
 
 </html>

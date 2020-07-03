@@ -45,7 +45,6 @@
     height: 110px;
     border-radius: 50%;
     margin: 15px;
-    border: 2px solid rgb(33, 33, 33);
 }
 
 .admin h4 {
@@ -308,16 +307,177 @@
     font-size: 11px;
 }
 
-.top_nav_contents .noti .drop_noti{
-    width: 200px;
-    height: 50px;
+.top_nav_contents .noti .drop_noti {
+    width: 320px;
+    padding-bottom: 7px;
     position: absolute;
     z-index: 8;
     transform: translateY(15px);
-    left: -110px;
+    left: -250px;
     display: none;
-    background: black;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.1);
 }
+
+
+/********************************************notification div heading*********************************/
+.top_nav_contents .noti .drop_noti .noti_heading_btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#1CB5E0;
+}
+
+.top_nav_contents .noti .drop_noti .noti_heading_btn a {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 11px;
+    margin-right: 11px;
+    padding: 0px 7px;
+    color: #1CB5E0;
+    border-radius: 3px;
+    border: .5px solid #1CB5E0;
+    background-color: white;
+    margin-bottom: 0px;
+}
+
+
+
+.top_nav_contents .noti .drop_noti .noti_heading_btn h6 {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 18px;
+    padding: 8px 10px;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.top_nav_contents .noti .drop_noti h6:before {
+    position: absolute;
+    top: -10px;
+    left: 245px;
+    content: '';
+    border-bottom: 12px solid #1CB5E0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+}
+
+/************************************notificatio hr*****************************************/
+
+.top_nav_contents .noti .drop_noti hr {
+    color: rgba(33, 33, 33, 0.4);
+    margin: 0px auto 0px auto;
+}
+
+/************************************show all notification*****************************************/
+
+.top_nav_contents .noti .drop_noti a {
+    font-size: 13px;
+    color: rgb(2, 136, 209);
+    padding-left: 14px;
+    text-decoration: none;
+}
+
+.top_nav_contents .noti .drop_noti a:hover {
+    color: #01579B;
+}
+
+
+
+
+/************************************notification body*****************************************/
+.notification {
+    background: white;
+    padding: 8px 7px;
+}
+
+.notification:hover{
+    background: #eeeeee;
+}
+
+
+/************************************notification div icon*****************************************/
+
+.alert_icon .noti_side_icon {
+    background:#1CB5E0;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 50%;
+    font-size: 11px;
+    margin: 0px;
+}
+
+
+.notification .alert_icon {
+    padding:6px 0px 0px 8px;
+    display: flex;
+    align-items: center;
+    /* justify-content:space-around ; */
+}
+
+/************************************notification body content*****************************************/
+
+.notification .noti_content {
+    margin: 0px;
+}
+
+.notification .alert_icon h3 {
+    color: rgb(33, 33, 33);
+    font-size: 15px;
+    font-weight: 500;
+    /* padding-left: 3px; */
+    width: 290px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    /* word-break: break-all; */
+}
+
+.notification .noti_content h5 {
+    color: rgb(33, 33, 33);
+    font-size: 13px;
+    /* padding-left: 3px; */
+    width: 290px;
+    overflow:hidden;
+    font-weight: 600;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 0px; 
+    margin-left:7px;
+    padding-top: 7px;
+    /* word-break: break-all; */
+}
+
+.notification .noti_content p {
+    color: rgb(33, 33, 33);
+    font-size: 13px;
+    /* padding-left: 3px; */
+    width: 290px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 0px; 
+    margin-left:7px;
+    padding-top: 7px;
+    /* word-break: break-all; */
+}
+
+
+/************************************notification time*****************************************/
+
+.alert-time {
+    padding: 7px 0px 0px 0px;
+    font-size: 10px;
+    color: rgb(2, 136, 209);
+    text-align: end;
+}
+
+
+/************************************show notification div on click*****************************************/
 
 
 .top_nav_contents .noti .show_noti_div {

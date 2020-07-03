@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/***********************************************base***************************************************/
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+/***********************************************svg***************************************************/
+
+.top_image_bg {
+    height: 480px;
+    width: 100%;
+}
+
+.top_image_bg svg {
+    width: 100%;
+    height: 100%;
+}
+
+/***********************************************heading and form ***************************************************/
+
+.heading_form {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+/***********************************************headings***************************************************/
+
+
+.heading_text {
+    background: transparent;
+    height: 300px;
+}
+
+/***********************************************h1 used in login form for super admin**********************************************/
+
+.heading_text h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+/***********************************************h2 used in login form for super admin**********************************************/
+
+
+.heading_text h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    padding-top: 45px;
+    padding-bottom: 20px;
+}
+
+/***********************************************small para**********************************************/
+
+.heading_text p {
+    color: white;
+    font-size: 16px;
+
+}
+
+/***********************************************login form base and heading**********************************************/
+
+.form_base {
+    margin-top: 30px;
+    background: white;
+    box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+    width: 90%;
+    border-radius: 4px;
+    padding-bottom: 60px;
+}
+
+.form_base h1 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    padding-top: 50px;
+    color: rgb(33, 33, 33);
+    width: 80%;
+    margin: 0px auto 0px auto;
+    line-height: 25px;
+}
+
+
+
+
+
+
+/***********************************************main form with input box**************************************************************************/
+
+
+.main_form {
+    background: white;
+    height: 55%;
+    width: 100%;
+}
+
+.input_box {
+    position: relative;
+    width: 65%;
+    margin: 40px auto 0px auto;
+    padding-bottom: 16px;
+}
+
+/***********************************************form input box**************************************************************************/
+
+
+.input_box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+    color: rgb(2, 136, 209);
+    margin-bottom: 30x;
+    border: none;
+    border-bottom: 1.5px solid rgb(2, 136, 209);
+    outline: none;
+    background: transparent;
+}
+
+/***********************************************label for input**************************************************************************/
+
+
+.input_box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(2, 136, 209);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/**********************************************label focus**************************************************************************/
+
+
+.input_box input:focus~label,
+.input_box input:valid~label {
+    top: -18px;
+    left: 0;
+    color: black;
+    font-size: 12px;
+}
+
+
+.input_box .field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: 16px;
+    color: rgb(2, 136, 209);
+    z-index: 3;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+.main_form .expire {
+    width: 65%;
+    margin: 0px auto 0px auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main_form .expire h2 {
+    font-size: 11px;
+    color: rgb(2, 136, 209);
+    margin-bottom: 0px;
+}
+
+
+
+
+.login_here {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.login_here a {
+    text-decoration: none !important;
+}
+
+
+
+
+/***********************************************login button for login form**************************************************************************/
+
+
+
+.log-btn {
+    cursor: pointer;
+    margin: 40px auto 0px auto;
+    height: 34px;
+    width: 66%;
+    display: block;
+    transition: 0.2s ease;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background: rgb(2, 136, 209);
+    border: 1.5px solid rgb(2, 136, 209);
+}
+
+.log-btn:hover {
+    background: #0277BD;
+    border-color: #0277BD;
+}
+
+
+
+/*********************************************************************** back buuton ***************************************************/
+
+
+.down {
+    position: absolute;
+    bottom: 0%;
+    left: 1%;
+    z-index: 20;
+}
+
+.back_btn {
+
+    padding: 0;
+    text-align: center;
+}
+
+
+.back {
+
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50px;
+    overflow: hidden;
+    background: rgb(2, 136, 209);
+    height: 42px;
+
+}
+
+
+.back a {
+    display: block;
+    min-width: 38px;
+    max-width: 2em;
+    white-space: nowrap;
+    line-height: 44px;
+    transition: .8s;
+    text-decoration: none;
+    font-size: 21px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.back a i {
+    text-align: center;
+    margin-left: 11px;
+    margin-right: 9px;
+    padding-right: 5px;
+}
+
+.back:hover a {
+    padding-right: 20px;
+    max-width: 200px;
+    color: white;
+    text-decoration: none;
+}
+
+#form2 {
+    display: none;
+}
+
+#form3 {
+    display: none;
+}
+
+
+
+/*****************************************************media**************************************/
+
+
+@media screen and (max-width:600px) {
+
+    /***********************************************base***************************************************/
+
+    .wrapper {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+    }
+
+    /***********************************************svg***************************************************/
+
+    .top_image_bg {
+        height: 480px;
+        width: 100%;
+    }
+
+    .top_image_bg svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    /***********************************************heading and form ***************************************************/
+
+    .heading_form {
+        position: absolute;
+        top: 13%;
+        left: 0%;
+    }
+
+    /***********************************************headings***************************************************/
+
+
+    .heading_text {
+        background: transparent;
+        height: 300px;
+        display: none;
+    }
+
+    /***********************************************login form base and heading**********************************************/
+
+    .form_base {
+        margin: 0px auto 0px auto;
+    }
+
+    .form_base h1 {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 100;
+        padding-top: 50px;
+        color: rgb(33, 33, 33);
+        width: 80%;
+        margin: 0px auto 0px auto;
+        line-height: 25px;
+    }
+
+
+    .login_here {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 25px;
+    }
+
+    .log-btn {
+        cursor: pointer;
+        margin: 35px auto 0px auto;
+        height: 34px;
+        width: 66%;
+        display: block;
+        transition: 0.2s ease;
+        border-radius: 3px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        background: rgb(2, 136, 209);
+        border: 1.5px solid rgb(2, 136, 209);
+    }
+
+    .input_box {
+        position: relative;
+        width: 65%;
+        margin: 40px auto 0px auto;
+        padding-bottom: 14px;
+    }
+
+    .form_base {
+        margin-top: 30px;
+        background: white;
+        box-shadow: 0px 5px 25px rgba(134, 96, 96, 0.3);
+        width: 90%;
+        border-radius: 4px;
+        padding-bottom: 60px;
+    }
+
+
+    .input_box label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 14px;
+        color: rgb(2, 136, 209);
+        pointer-events: none;
+        transition: 0.5s;
+    }
+
+
+    .back {
+        display: none;
+
+    }
+
+}

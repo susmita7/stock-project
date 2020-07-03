@@ -10,6 +10,7 @@
     <!--------------------------------------------------css link----------------------------------------------------------->
     <link rel="stylesheet" type="text/css" href="css/clg_admin_dashboard_home.css">
     <link rel="stylesheet" type="text/css" href="css/main_dashboard.css">
+    <link rel="stylesheet" type="text/css" href="css/media_dashboard.css">
 
     <!--------------------------------------------------bootstrap css link----------------------------------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -19,30 +20,30 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins:300&display=swap" rel="stylesheet">
 </head>
 
-<body  onload="renderDate()">
+<body onload="renderDate()">
     <div class="wrapper">
-        <div class="side_menu">
-            <div class="side_menu_close_btn" onclick="side_menu_close()">
-                <a><i class="fas fa-window-close"></i></a>
+        <div class="side_menu" id="menu">
+            <div class="side_menu_close_btn">
+                <a><i class="fas fa-window-close" onclick="side_menu_open()"></i></a>
             </div>
             <div class="admin con_tabs">
-                <img src="AAu-jorhat.jpg" alt="aau.jpg">
+                <img src="images/user1.png" alt="aau.jpg">
                 <h4>Welcome Priya</h4>
                 <a href="clg_admin_profile.php">View Profile</a>
             </div>
             <div class="tabs">
                 <div class="con_tabs">
                     <a href="clg_admin_dashboard_home.php" class="con_tabs_links ac"><i class="fas fa-home"></i>
-                        Home</a>
+                        Dashboard</a>
                     <a href="department.php" class="con_tabs_links"><i class="fas fa-book"></i> Departments</a>
 
                     <a href="dept_admin.php" class="con_tabs_links"><i class="fas fa-user"></i>
                         Dept_admins</a>
-                        <a href="#" class="con_tabs_links"><span class="counter_side_noti">
+                    <a href="notification.php" class="con_tabs_links"><span class="counter_side_noti">
                             <p>2</p>
                         </span><i class="fas fa-bell"></i> Notifications</a>
                     <a href="firms.php" class="con_tabs_links"><i class="fas fa-building"></i> Firms</a>
-
+                    <a href="activity.php" class="con_tabs_links"><i class="fas fa-history"></i> Activity log</a>
                 </div>
             </div>
             <!---------------------------------------------------- copyright------------------------------------------->
@@ -57,11 +58,13 @@
 
         </div>
         <div class="top_content">
-            <div class="hamburger" onclick="side_menu_open()">
-                <a><i class="fas fa-bars"></i></a>
-            </div>
+
             <div class="top_nav">
+
                 <div class="top_nav_heading">
+                    <div class="hamburger">
+                        <a><i class="fas fa-bars" onclick="side_menu_open()"></i></a>
+                    </div>
                     <h3>College of Agriculture</h3>
                 </div>
 
@@ -84,7 +87,7 @@
 
                         ?>
 
-                        <i class="fas fa-angle-down" id="angle_arrow"  onclick="show_calendar()"></i>
+                        <i class="fas fa-angle-down" id="angle_arrow" onclick="show_calendar()"></i>
 
                         <div class="calendar_wrapper" id="calendar">
                             <div class="calendar">
@@ -140,6 +143,74 @@
             </div>
 
             <div class="content">
+
+
+                <!--------------------------------------------overview heading ---------------------------------------------->
+                <h1>Overview</h1>
+
+                <div class="content_counter">
+                    <div class="con_details">
+                        <img src="images/dept.png" class="dept">
+                        <h4>Departments</h4>
+
+                        <h2>2</h2>
+                    </div>
+                    <div class="con_details">
+                        <img src="images/Group 9.png" class="ad">
+                        <h4>Department admin</h4>
+
+                        <h2>1</h2>
+                    </div>
+
+                    <div class="con_details">
+                        <img src="images/firm2.png" class="firm">
+                        <h4>Firm details</h4>
+
+                        <h2>1</h2>
+                    </div>
+
+                    <div class="con_details">
+                        <img src="images/noti.png" class="notify">
+                        <h4>Notifications</h4>
+
+                        <h2>3</h2>
+                    </div>
+                </div>
+
+
+
+
+                <div class="instruction">
+
+                    <div class="ins_head">
+
+                        <img src="images/Group 10.png" class="ins_pic">
+
+
+                        <h5>Activities of College admin</h5>
+
+
+                        <p>You can add and edit departments which are under the College of Agriculture.</p>
+
+                        <p>You can add , edit and delete department Admins which are under departments of the College of
+                            agricuture.</p>
+
+                        <p>You can add , edit , delete firms and also can send mail to the firms you have added.</p>
+
+                        <p>You can send notification to super admin.</p>
+
+                        <p>You can edit your notifications and approve or deny the notifications which are sent by the
+                            department admins of the college of agriculture.</p>
+
+
+                        <p>Lastly , You can see your previous activities.</p>
+                    </div>
+                </div>
+
+
+
+
+
 
 
 
